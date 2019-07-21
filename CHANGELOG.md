@@ -9,3 +9,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - This CHANGELOG file to keep track of `parent`'s changes.
 - An [editorconfig](https://editorconfig.org/) file for defining a basic coding styles.
+- A gitignore to exclude Maven and Intellij IDEA files from being committed.
