@@ -1,11 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+  child.project.url.inherit.append.path="false">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>fr.marcwrobel</groupId>
   <artifactId>parent</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
+
+  <name>${project.name}</name>
+  <description>${project.description}</description>
+  <url>${project.url}</url>
+  <inceptionYear>${project.inceptionYear}</inceptionYear>
+
+  <organization>
+    <name>${my.name}</name>
+    <url>${my.url}</url>
+  </organization>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>${my.name}</name>
+      <email>${my.email}</email>
+      <url>${my.url}</url>
+    </developer>
+  </developers>
+
+  <!--
+    Using child.*.inherit.append.path avoid path addition to inherited URLs. Re-declare to override.
+    See https://issues.apache.org/jira/browse/MNG-5951.
+  -->
+  <scm child.scm.connection.inherit.append.path="false"
+    child.scm.developerConnection.inherit.append.path="false"
+    child.scm.url.inherit.append.path="false">
+    <url>${project.scm.url}</url>
+    <connection>${project.scm.connection}</connection>
+    <developerConnection>${project.scm.developerConnection}</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <system>${project.issueManagement.system}</system>
+    <url>${project.issueManagement.url}</url>
+  </issueManagement>
+
+  <ciManagement>
+    <system>${project.ciManagement.system}</system>
+    <url>${project.ciManagement.url}</url>
+  </ciManagement>
+
+  <distributionManagement>
+    <repository>
+      <id>${project.distributionManagement.system}</id>
+      <url>${project.distributionManagement.url}</url>
+    </repository>
+  </distributionManagement>
+
+  <properties>
+    <project.name>${project.artifactId}</project.name>
+    <project.description>${my.name} parent POM.</project.description>
+    <project.url>${project.scm.url}</project.url>
+    <project.inceptionYear>2019</project.inceptionYear>
+
+    <project.scm.system>GitHub</project.scm.system>
+    <project.scm.url>https://github.com/${my.user}/${project.artifactId}</project.scm.url>
+    <project.scm.connection>git@github.com:${my.user}/${project.artifactId}</project.scm.connection>
+    <project.scm.developerConnection>${project.scm.connection}</project.scm.developerConnection>
+
+    <project.issueManagement.system>${project.scm.system}</project.issueManagement.system>
+    <project.issueManagement.url>${project.scm.url}/issues</project.issueManagement.url>
+
+    <project.ciManagement.system>Travis CI</project.ciManagement.system>
+    <project.ciManagement.url>
+      https://travis-ci.org/${my.user}/${project.artifactId}
+    </project.ciManagement.url>
+
+    <project.distributionManagement.system>bintray</project.distributionManagement.system>
+    <project.distributionManagement.repository>maven</project.distributionManagement.repository>
+    <project.distributionManagement.url>
+      https://api.bintray.com/maven/${my.user}/${project.distributionManagement.repository}/${project.artifactId}/;publish=1
+    </project.distributionManagement.url>
+
+    <my.name>Marc Wrobel</my.name>
+    <my.user>marcwrobel</my.user>
+    <my.email>marc.wrobel@gmail.com</my.email>
+    <my.url>http://www.marcwrobel.fr/</my.url>
+  </properties>
 </project>
