@@ -1,8 +1,12 @@
 Writing and maintaining Maven projects
 [POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
-is boring. This parent POM is simplifying those tasks by defining:
-* common properties that can be easily overridden;
-* a convenient set of configuration default (if you use GitHub, Travis CI and JFrog Bintray).
+is boring. This parent POM is simplifying those tasks in the context of an open source project
+developed by an individual developer by:
+* defining common project and developer
+  [properties](https://books.sonatype.com/mvnref-book/reference/resource-filtering-sect-properties.html)
+  that can be easily overridden in a single place;
+* defining a convenient set of configuration default (if you use GitHub, Travis CI and JFrog
+  Bintray).
 
 ## How to use it?
 Just inherit from it in your project :
@@ -23,12 +27,12 @@ Just inherit from it in your project :
   <artifactId>myproject</artifactId>
   <version>x.y.z-SNAPSHOT</version>
 ...
-  <!-- override only the needed properties -->
+  <!-- only override if needed -->
   <properties>
-    <project.name>${project.artifactId}</project.name>
-    <project.description>${my.name} parent POM.</project.description>
-    <project.url>${project.scm.url}</project.url>
-    <project.inceptionYear>2019</project.inceptionYear>
+    <this.name>${project.artifactId}</this.name>
+    <this.description>${my.name} parent POM.</this.description>
+    <this.url>${project.scm.url}</this.url>
+    <this.inceptionYear>2019</this.inceptionYear>
     ...
   </properties>
 </project>

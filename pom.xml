@@ -10,10 +10,10 @@
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>${project.name}</name>
-  <description>${project.description}</description>
-  <url>${project.url}</url>
-  <inceptionYear>${project.inceptionYear}</inceptionYear>
+  <name>${this.name}</name>
+  <description>${this.description}</description>
+  <url>${this.url}</url>
+  <inceptionYear>${this.inceptionYear}</inceptionYear>
 
   <organization>
     <name>${my.name}</name>
@@ -43,57 +43,64 @@
   <scm child.scm.connection.inherit.append.path="false"
     child.scm.developerConnection.inherit.append.path="false"
     child.scm.url.inherit.append.path="false">
-    <url>${project.scm.url}</url>
-    <connection>${project.scm.connection}</connection>
-    <developerConnection>${project.scm.developerConnection}</developerConnection>
+    <url>${this.scm.url}</url>
+    <connection>${this.scm.connection}</connection>
+    <developerConnection>${this.scm.developerConnection}</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
   <issueManagement>
-    <system>${project.issueManagement.system}</system>
-    <url>${project.issueManagement.url}</url>
+    <system>${this.issueManagement.system}</system>
+    <url>${this.issueManagement.url}</url>
   </issueManagement>
 
   <ciManagement>
-    <system>${project.ciManagement.system}</system>
-    <url>${project.ciManagement.url}</url>
+    <system>${this.ciManagement.system}</system>
+    <url>${this.ciManagement.url}</url>
   </ciManagement>
 
   <distributionManagement>
     <repository>
-      <id>${project.distributionManagement.system}</id>
-      <url>${project.distributionManagement.url}</url>
+      <id>${this.distributionManagement.system}</id>
+      <url>${this.distributionManagement.url}</url>
     </repository>
   </distributionManagement>
 
   <properties>
-    <project.name>${project.artifactId}</project.name>
-    <project.description>${my.name} parent POM.</project.description>
-    <project.url>${project.scm.url}</project.url>
-    <project.inceptionYear>2019</project.inceptionYear>
+    <this.name>${project.artifactId}</this.name>
+    <this.description>${my.name} parent POM.</this.description>
+    <this.url>${this.scm.url}</this.url>
+    <this.inceptionYear>2019</this.inceptionYear>
 
-    <project.scm.system>GitHub</project.scm.system>
-    <project.scm.url>https://github.com/${my.user}/${project.artifactId}</project.scm.url>
-    <project.scm.connection>git@github.com:${my.user}/${project.artifactId}</project.scm.connection>
-    <project.scm.developerConnection>${project.scm.connection}</project.scm.developerConnection>
+    <this.scm.system>GitHub</this.scm.system>
+    <this.scm.project>${project.artifactId}</this.scm.project>
+    <this.scm.url>https://github.com/${my.scm.user}/${this.scm.project}</this.scm.url>
+    <this.scm.connection>git@github.com:${my.scm.user}/${this.scm.project}</this.scm.connection>
+    <this.scm.developerConnection>${this.scm.connection}</this.scm.developerConnection>
 
-    <project.issueManagement.system>${project.scm.system}</project.issueManagement.system>
-    <project.issueManagement.url>${project.scm.url}/issues</project.issueManagement.url>
+    <this.issueManagement.system>${this.scm.system}</this.issueManagement.system>
+    <this.issueManagement.project>${this.scm.project}</this.issueManagement.project>
+    <this.issueManagement.url>${this.scm.url}/issues</this.issueManagement.url>
 
-    <project.ciManagement.system>Travis CI</project.ciManagement.system>
-    <project.ciManagement.url>
-      https://travis-ci.org/${my.user}/${project.artifactId}
-    </project.ciManagement.url>
+    <this.ciManagement.system>Travis CI</this.ciManagement.system>
+    <this.ciManagement.project>${project.artifactId}</this.ciManagement.project>
+    <this.ciManagement.url>
+      https://travis-ci.org/${my.ciManagement.user}/${this.ciManagement.project}
+    </this.ciManagement.url>
 
-    <project.distributionManagement.system>bintray</project.distributionManagement.system>
-    <project.distributionManagement.repository>maven</project.distributionManagement.repository>
-    <project.distributionManagement.url>
-      https://api.bintray.com/maven/${my.user}/${project.distributionManagement.repository}/${project.artifactId}/;publish=1
-    </project.distributionManagement.url>
+    <this.distributionManagement.system>bintray</this.distributionManagement.system>
+    <this.distributionManagement.repository>maven</this.distributionManagement.repository>
+    <this.distributionManagement.project>${project.artifactId}</this.distributionManagement.project>
+    <this.distributionManagement.url>
+      https://api.bintray.com/maven/${my.distributionManagement.user}/${this.distributionManagement.repository}/${this.distributionManagement.project}/;publish=1
+    </this.distributionManagement.url>
 
     <my.name>Marc Wrobel</my.name>
     <my.user>marcwrobel</my.user>
     <my.email>marc.wrobel@gmail.com</my.email>
     <my.url>http://www.marcwrobel.fr/</my.url>
+    <my.scm.user>${my.user}</my.scm.user>
+    <my.ciManagement.user>${my.user}</my.ciManagement.user>
+    <my.distributionManagement.user>${my.user}</my.distributionManagement.user>
   </properties>
 </project>
