@@ -1,13 +1,14 @@
 Writing and maintaining Maven projects
 [POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
-is boring. This parent POM is simplifying those tasks in the context of an open source project
-developed by an individual developer by:
+is boring. This parent POM is simplifying those tasks in the context of my open source projects by:
 * defining common project and developer
   [properties](https://books.sonatype.com/mvnref-book/reference/resource-filtering-sect-properties.html)
   that can be easily overridden in a single place;
 * defining a convenient set of configuration default (if you use GitHub, Travis CI and JFrog
   Bintray).
 * providing dependency and plugin management
+
+
 
 ## How to use it?
 Just inherit from it in your project :
@@ -49,6 +50,26 @@ your project:
 ```bash
 mvn help:effective-pom
 ```
+
+
+
+## What's included?
+* default Maven configuration for `organization`, `developers`, `scm`, `issueManagement`,
+  `ciManagement`, `distributionManagement`.
+* a default goal (`clean install`)
+* dependency management for dozens of libraries (some [Apache Commons](https://commons.apache.org),
+  some [java extensions](https://www.jcp.org/), [Groovy](http://www.groovy-lang.org/),
+  [Spring](https://spring.io/), [Hibernate](https://hibernate.org/) to name a few),
+* plugin management for:
+  [kotlin-maven-plugin](https://kotlinlang.org/docs/reference/using-maven.html),
+  [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/),
+  [maven-failsafe-plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/),
+  [git-commit-id-plugin](https://github.com/git-commit-id/maven-git-commit-id-plugin),
+  [gmavenplus-plugin](https://groovy.github.io/GMavenPlus/),
+  [spring-boot-maven-plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/index.html).
+
+Take a look at the [POM](pom.xml) for more details.
+
 
 
 ## Why `spring-boot-starter-parent`?

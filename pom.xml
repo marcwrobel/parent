@@ -113,7 +113,55 @@
     <my.ciManagement.user>${my.user}</my.ciManagement.user>
     <my.distributionManagement.user>${my.user}</my.distributionManagement.user>
 
-    <!-- Spring Boot POM overrides -->
-    <java.version>${this.java.version}</java.version>
+    <!-- Plugins -->
+    <gmavenplus-plugin.version>1.7.1</gmavenplus-plugin.version>
+
+    <!-- Overrides -->
+    <java.version>${this.java.version}</java.version><!-- from Spring Boot -->
   </properties>
+
+  <build>
+    <defaultGoal>clean install</defaultGoal>
+
+    <pluginManagement>
+      <plugins>
+        <!--
+          Joint compilation configuration.
+          See https://github.com/groovy/GMavenPlus/wiki/Usage#configuring-gmavenplus-1.
+        -->
+        <plugin>
+          <groupId>org.codehaus.gmavenplus</groupId>
+          <artifactId>gmavenplus-plugin</artifactId>
+          <version>${gmavenplus-plugin.version}</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>addSources</goal>
+                <goal>addTestSources</goal>
+                <goal>generateStubs</goal>
+                <goal>compile</goal>
+                <goal>generateTestStubs</goal>
+                <goal>compileTests</goal>
+                <goal>removeStubs</goal>
+                <goal>removeTestStubs</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>attach-sources</id>
+              <goals>
+                <goal>jar-no-fork</goal>
+                <goal>test-jar-no-fork</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
 </project>
