@@ -65,6 +65,7 @@ mvn help:effective-pom
   [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/),
   [maven-enforcer-plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/),
   [maven-failsafe-plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/),
+  [maven-git-code-format](https://github.com/Cosium/maven-git-code-format),
   [git-commit-id-plugin](https://github.com/git-commit-id/maven-git-commit-id-plugin),
   [gmavenplus-plugin](https://groovy.github.io/GMavenPlus/),
   [spring-boot-maven-plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/index.html).
