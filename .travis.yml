@@ -1,0 +1,10 @@
+language: java
+
+script:
+  - mvn install
+  - mvn versions:display-dependency-updates
+  - mvn versions:display-plugin-updates
+
+jdk:
+  - openjdk8
+  - openjdk11
