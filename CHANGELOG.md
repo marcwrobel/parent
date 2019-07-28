@@ -6,9 +6,10 @@ minor versions are following those of [`spring-boot-starter-parent`](https://spr
 
 
 
-## Unreleased
+## 2.1.0 (unreleased)
 ### Added
 - This CHANGELOG file to keep track of `parent`'s changes.
 - An [editorconfig](https://editorconfig.org/) file for defining a basic coding styles.
 - A gitignore to exclude Maven and Intellij IDEA files from being committed.
 - An initial version of the `parent` POM.
+- Travis CI configuration for testing this project.

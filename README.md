@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/marcwrobel/parent.svg?branch=master)](https://travis-ci.org/marcwrobel/parent)
+
 Writing and maintaining Maven projects
 [POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
 is boring. This parent POM is simplifying those tasks in the context of my open source projects by:
@@ -50,6 +52,8 @@ your project:
 ```bash
 mvn help:effective-pom
 ```
+
+Note that in order to use this POM you must use at least Java 8 and Maven 3.6.1.
 
 
 

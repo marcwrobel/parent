@@ -1,5 +1,15 @@
 language: java
 
+env:
+  - MAVEN_VERSION=3.6.1
+
+# Travis CI only provides Maven 3.5.2, upgrading to 3.6.1.
+# See https://github.com/travis-ci/travis-ci/issues/7719.
+before_install:
+  - wget -O /tmp/maven.tar.gz https://www-us.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz
+  - tar -xzf /tmp/maven.tar.gz -C /tmp
+  - export PATH=/tmp/apache-maven-$MAVEN_VERSION/bin:$PATH
+
 script:
   - mvn install
   - mvn versions:display-dependency-updates
