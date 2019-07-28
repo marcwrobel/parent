@@ -5,9 +5,16 @@
   child.project.url.inherit.append.path="false">
   <modelVersion>4.0.0</modelVersion>
 
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.1.6.RELEASE</version>
+    <relativePath/>
+  </parent>
+
   <groupId>fr.marcwrobel</groupId>
   <artifactId>parent</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>2.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>${this.name}</name>
@@ -72,6 +79,9 @@
     <this.url>${this.scm.url}</this.url>
     <this.inceptionYear>2019</this.inceptionYear>
 
+    <this.java.version>1.8</this.java.version>
+    <this.maven.version>3.6.1</this.maven.version>
+
     <this.scm.system>GitHub</this.scm.system>
     <this.scm.project>${project.artifactId}</this.scm.project>
     <this.scm.url>https://github.com/${my.scm.user}/${this.scm.project}</this.scm.url>
@@ -102,5 +112,8 @@
     <my.scm.user>${my.user}</my.scm.user>
     <my.ciManagement.user>${my.user}</my.ciManagement.user>
     <my.distributionManagement.user>${my.user}</my.distributionManagement.user>
+
+    <!-- Spring Boot POM overrides -->
+    <java.version>${this.java.version}</java.version>
   </properties>
 </project>

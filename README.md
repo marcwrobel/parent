@@ -7,6 +7,7 @@ developed by an individual developer by:
   that can be easily overridden in a single place;
 * defining a convenient set of configuration default (if you use GitHub, Travis CI and JFrog
   Bintray).
+* providing dependency and plugin management
 
 ## How to use it?
 Just inherit from it in your project :
@@ -33,6 +34,9 @@ Just inherit from it in your project :
     <this.description>${my.name} parent POM.</this.description>
     <this.url>${project.scm.url}</this.url>
     <this.inceptionYear>2019</this.inceptionYear>
+
+    <this.java.version>1.8</this.java.version>
+    <this.maven.version>3.6.1</this.maven.version>
     ...
   </properties>
 </project>
@@ -45,3 +49,14 @@ your project:
 ```bash
 mvn help:effective-pom
 ```
+
+
+## Why `spring-boot-starter-parent`?
+This POM is inheriting from [`spring-boot-starter-parent`](https://spring.io/projects/spring-boot)
+in order to:
+* take advantage of the Spring Boot team's work on dependencies compatibility (see
+  `spring-boot-dependencies`);
+* benefit from some good plugin management defaults.
+
+Because this POM is relying so much on `spring-boot-starter-parent` its major and minor versions are
+also following those of Spring Boot.
