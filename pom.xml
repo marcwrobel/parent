@@ -125,6 +125,14 @@
 
     <pluginManagement>
       <plugins>
+        <plugin>
+          <groupId>pl.project13.maven</groupId>
+          <artifactId>git-commit-id-plugin</artifactId>
+          <configuration>
+            <verbose>false</verbose>
+          </configuration>
+        </plugin>
+
         <!--
           Joint compilation configuration.
           See https://github.com/groovy/GMavenPlus/wiki/Usage#configuring-gmavenplus-1.
