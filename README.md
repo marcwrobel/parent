@@ -63,6 +63,7 @@ mvn help:effective-pom
 * plugin management for:
   [kotlin-maven-plugin](https://kotlinlang.org/docs/reference/using-maven.html),
   [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/),
+  [maven-enforcer-plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/),
   [maven-failsafe-plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/),
   [git-commit-id-plugin](https://github.com/git-commit-id/maven-git-commit-id-plugin),
   [gmavenplus-plugin](https://groovy.github.io/GMavenPlus/),

@@ -169,6 +169,30 @@
             </execution>
           </executions>
         </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-enforcer-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>enforce-maven</id>
+              <goals>
+                <goal>enforce</goal>
+              </goals>
+              <configuration>
+                <rules>
+                  <requireMavenVersion>
+                    <version>[${this.maven.version},)</version>
+                  </requireMavenVersion>
+                  <requireJavaVersion>
+                    <version>[${this.java.version},)</version>
+                  </requireJavaVersion>
+                  <banDuplicatePomDependencyVersions/>
+                </rules>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
