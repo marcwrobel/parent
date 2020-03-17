@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/marcwrobel/parent.svg?branch=master)](https://travis-ci.org/marcwrobel/parent)
+[![Build](https://github.com/marcwrobel/parent/workflows/build/badge.svg)](https://github.com/marcwrobel/parent/actions)
 
 Writing and maintaining Maven projects
 [POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
@@ -6,7 +6,7 @@ is boring. This parent POM is simplifying those tasks in the context of my open 
 * defining common project and developer
   [properties](https://books.sonatype.com/mvnref-book/reference/resource-filtering-sect-properties.html)
   that can be easily overridden in a single place;
-* defining a convenient set of configuration default (if you use GitHub, Travis CI and JFrog
+* defining a convenient set of configuration default (if you use GitHub, GitHub Actions and JFrog
   Bintray).
 * providing dependency and plugin management
 
@@ -39,7 +39,7 @@ Just inherit from it in your project :
     <this.inceptionYear>2019</this.inceptionYear>
 
     <this.java.version>1.8</this.java.version>
-    <this.maven.version>3.6.1</this.maven.version>
+    <this.maven.version>3.6.3</this.maven.version>
     ...
   </properties>
 </project>

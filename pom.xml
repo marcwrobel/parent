@@ -92,11 +92,9 @@
     <this.issueManagement.project>${this.scm.project}</this.issueManagement.project>
     <this.issueManagement.url>${this.scm.url}/issues</this.issueManagement.url>
 
-    <this.ciManagement.system>Travis CI</this.ciManagement.system>
+    <this.ciManagement.system>GitHub Actions</this.ciManagement.system>
     <this.ciManagement.project>${project.artifactId}</this.ciManagement.project>
-    <this.ciManagement.url>
-      https://travis-ci.org/${my.ciManagement.user}/${this.ciManagement.project}
-    </this.ciManagement.url>
+    <this.ciManagement.url>${this.scm.url}/actions</this.ciManagement.url>
 
     <this.distributionManagement.system>bintray</this.distributionManagement.system>
     <this.distributionManagement.repository>maven</this.distributionManagement.repository>
