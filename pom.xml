@@ -80,7 +80,7 @@
     <this.inceptionYear>2019</this.inceptionYear>
 
     <this.java.version>1.8</this.java.version>
-    <this.maven.version>3.6.1</this.maven.version>
+    <this.maven.version>3.6.3</this.maven.version>
 
     <this.scm.system>GitHub</this.scm.system>
     <this.scm.project>${project.artifactId}</this.scm.project>
