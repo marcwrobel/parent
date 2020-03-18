@@ -67,6 +67,8 @@ Note that in order to use this POM you must use at least Java 8 and Maven 3.6.1.
   ([CI-friendly configuration](http://maven.apache.org/maven-ci-friendly.html)),
 - plugin management for [git-commit-id-plugin](https://github.com/git-commit-id/maven-git-commit-id-plugin)
   (provided by `spring-boot-starter-parent` but non-verbose),
+- plugin management for [jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin)
+  (default `from` and `to`),
 - plugin management for [kotlin-maven-plugin](https://kotlinlang.org/docs/reference/using-maven.html)
   (provided by `spring-boot-starter-parent`),
 - plugin management for [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/)

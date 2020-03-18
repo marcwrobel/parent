@@ -82,7 +82,7 @@
     <this.defaultGoal>install</this.defaultGoal>
     <this.resource.delimiter>@</this.resource.delimiter>
 
-    <this.java.version>1.8</this.java.version>
+    <this.java.version>11</this.java.version>
     <this.java.version.enforced>[${this.java.version},)</this.java.version.enforced>
     <this.maven.version>3.6.3</this.maven.version>
     <this.maven.version.enforced>[${this.maven.version},)</this.maven.version.enforced>
@@ -108,6 +108,8 @@
       https://api.bintray.com/maven/${dev.distributionManagement.user}/${this.distributionManagement.repository}/${this.distributionManagement.project}/;publish=1
     </this.distributionManagement.url>
 
+    <project.docker.base-image>openjdk:${this.java.version}-jre-slim</project.docker.base-image>
+
     <dev.name>Marc Wrobel</dev.name>
     <dev.user>marcwrobel</dev.user>
     <dev.email>marc.wrobel@gmail.com</dev.email>
@@ -115,12 +117,14 @@
     <dev.scm.user>${dev.user}</dev.scm.user>
     <dev.ciManagement.user>${dev.user}</dev.ciManagement.user>
     <dev.distributionManagement.user>${dev.user}</dev.distributionManagement.user>
+    <dev.dockerRegistry.user>${dev.user}</dev.dockerRegistry.user>
 
     <!-- Dependencies versions -->
     <spring-boot.version>${project.parent.version}</spring-boot.version>
 
     <!-- Plugins -->
     <maven-git-code-format.version>1.39</maven-git-code-format.version>
+    <jib-maven-plugin.version>2.1.0</jib-maven-plugin.version>
 
     <!-- Default properties overrides -->
     <java.version>${this.java.version}</java.version><!-- from Spring Boot -->
@@ -186,6 +190,23 @@
           <artifactId>git-commit-id-plugin</artifactId>
           <configuration>
             <verbose>false</verbose>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>com.google.cloud.tools</groupId>
+          <artifactId>jib-maven-plugin</artifactId>
+          <version>${jib-maven-plugin.version}</version>
+          <configuration>
+            <from>
+              <image>${project.docker.base-image}</image>
+            </from>
+            <to>
+              <image>${dev.dockerRegistry.user}/${project.name}</image>
+              <tags>
+                <tag>${project.version}</tag>
+              </tags>
+            </to>
           </configuration>
         </plugin>
 
