@@ -4,26 +4,3 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) (major and
 minor versions are following those of [`spring-boot-starter-parent`](https://spring.io/projects/spring-boot)).
 
-
-
-## 2.2.0 (unreleased)
-### Added
-- This CHANGELOG file to keep track of `parent`'s changes.
-- An [editorconfig](https://editorconfig.org/) file for defining a basic coding styles.
-- A gitignore to exclude Maven and Intellij IDEA files from being committed.
-- An initial version of the `parent` POM with default Maven configuration for `organization`,
-  `developers`, `scm`, `issueManagement`, `ciManagement`, `distributionManagement`.
-- Plugin management for flatten-maven-plugin.
-- Plugin management for git-commit-id-plugin.
-- Plugin management for jacoco-maven-plugin.
-- Plugin management for jib-maven-plugin.
-- Plugin management for kotlin-maven-plugin.
-- Plugin management for maven-compiler-plugin.
-- Plugin management for maven-enforcer-plugin.
-- Plugin management for maven-failsafe-plugin.
-- Plugin management for maven-git-code-format.
-- Plugin management for sonar-maven-plugin.
-- plugin management for maven-release-plugin.
-- Plugin management for spring-boot-maven-plugin.
-- GitHub Action configuration for testing this project.
-- A release profile with maven-source-plugin, maven-javadoc-plugin and maven-gpg-plugin.
