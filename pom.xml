@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
-  child.project.url.inherit.append.path="false">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" child.project.url.inherit.append.path="false">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.2.5.RELEASE</version>
-    <relativePath/>
+    <relativePath />
   </parent>
 
   <groupId>fr.marcwrobel</groupId>
   <artifactId>parent</artifactId>
-  <version>2.2.0-SNAPSHOT</version>
+  <version>2.2.0</version>
   <packaging>pom</packaging>
 
   <name>${this.name}</name>
@@ -47,13 +44,11 @@
     Using child.*.inherit.append.path avoid path addition to inherited URLs. Re-declare to override.
     See https://issues.apache.org/jira/browse/MNG-5951.
   -->
-  <scm child.scm.connection.inherit.append.path="false"
-    child.scm.developerConnection.inherit.append.path="false"
-    child.scm.url.inherit.append.path="false">
+  <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
     <url>${this.scm.url}</url>
     <connection>${this.scm.connection}</connection>
     <developerConnection>${this.scm.developerConnection}</developerConnection>
-    <tag>HEAD</tag>
+    <tag>v2.2.0</tag>
   </scm>
 
   <issueManagement>
@@ -162,7 +157,7 @@
                   <requireJavaVersion>
                     <version>${this.java.version.enforced}</version>
                   </requireJavaVersion>
-                  <banDuplicatePomDependencyVersions/>
+                  <banDuplicatePomDependencyVersions />
                 </rules>
               </configuration>
             </execution>
