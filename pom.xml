@@ -79,6 +79,8 @@
     <this.url>${this.scm.url}</this.url>
     <this.inceptionYear>2019</this.inceptionYear>
 
+    <this.defaultGoal>install</this.defaultGoal>
+
     <this.java.version>1.8</this.java.version>
     <this.java.version.enforced>[${this.java.version},)</this.java.version.enforced>
     <this.maven.version>3.6.3</this.maven.version>
@@ -123,7 +125,7 @@
   </properties>
 
   <build>
-    <defaultGoal>clean install</defaultGoal>
+    <defaultGoal>${this.defaultGoal}</defaultGoal>
 
     <pluginManagement>
       <plugins>
