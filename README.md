@@ -69,27 +69,34 @@ Note that in order to use this POM you must use at least Java 8 and Maven 3.6.1.
 * dependency management for dozens of libraries ([Apache Commons](https://commons.apache.org),
   [java extensions](https://www.jcp.org/), [Groovy](http://www.groovy-lang.org/),
   [Spring](https://spring.io/), [Hibernate](https://hibernate.org/) to name a few),
-- plugin management for [flatten-maven-plugin](https://www.mojohaus.org/flatten-maven-plugin/)
+* plugin management for [flatten-maven-plugin](https://www.mojohaus.org/flatten-maven-plugin/)
   ([CI-friendly configuration](http://maven.apache.org/maven-ci-friendly.html)),
-- plugin management for [git-commit-id-plugin](https://github.com/git-commit-id/maven-git-commit-id-plugin)
+* plugin management for [git-commit-id-plugin](https://github.com/git-commit-id/maven-git-commit-id-plugin)
   (provided by `spring-boot-starter-parent` but non-verbose),
-- plugin management for [jacoco-maven-plugin](https://www.jacoco.org/jacoco/)
+* plugin management for [jacoco-maven-plugin](https://www.jacoco.org/jacoco/)
   (activation),
-- plugin management for [jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin)
+* plugin management for [jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin)
   (default `from` and `to`),
-- plugin management for [kotlin-maven-plugin](https://kotlinlang.org/docs/reference/using-maven.html)
+* plugin management for [kotlin-maven-plugin](https://kotlinlang.org/docs/reference/using-maven.html)
   (provided by `spring-boot-starter-parent`),
-- plugin management for [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/)
+* plugin management for [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/)
   (provided by `spring-boot-starter-parent`),
-- plugin management for [maven-enforcer-plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/)
+* plugin management for [maven-enforcer-plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/)
   (activation and configuration rules for Java and Maven versions),
-- plugin management for [maven-failsafe-plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/)
+* plugin management for [maven-failsafe-plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/)
   (provided by `spring-boot-starter-parent`),
-- plugin management for [maven-git-code-format](https://github.com/Cosium/maven-git-code-format)
+* plugin management for [maven-release-plugin](https://maven.apache.org/maven-release/maven-release-plugin/)
+  (change `tagNameFormat`).
+* plugin management for [maven-git-code-format](https://github.com/Cosium/maven-git-code-format)
   (hooks installation),
-- plugin management and project configuration for [sonar-maven-plugin](https://sonarsource.github.io/sonar-scanner-maven/),
-- plugin management for [spring-boot-maven-plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/index.html)
+* plugin management and project configuration for [sonar-maven-plugin](https://sonarsource.github.io/sonar-scanner-maven/),
+* plugin management for [spring-boot-maven-plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/index.html)
   (provided by `spring-boot-starter-parent`).
+* a release profile, activated automatically during release with `maven-release-plugin` which
+  triggers :
+  * sources attachment with [maven-source-plugin](https://maven.apache.org/plugins/maven-source-plugin/),
+  * javadoc attachment with [maven-javadoc-plugin](http://maven.apache.org/plugins/maven-javadoc-plugin/),
+  * a PGP signature with [maven-gpg-plugin](https://maven.apache.org/plugins/maven-gpg-plugin/).
 
 Take a look at the [POM](pom.xml) for more details.
 

@@ -69,6 +69,7 @@
   <distributionManagement>
     <repository>
       <id>${this.distributionManagement.system}</id>
+      <name>${this.distributionManagement.name}</name>
       <url>${this.distributionManagement.url}</url>
     </repository>
   </distributionManagement>
@@ -103,11 +104,10 @@
     <this.ciManagement.project>${project.artifactId}</this.ciManagement.project>
     <this.ciManagement.url>${this.scm.url}/actions</this.ciManagement.url>
 
-    <this.distributionManagement.system>bintray</this.distributionManagement.system>
-    <this.distributionManagement.repository>maven</this.distributionManagement.repository>
-    <this.distributionManagement.project>${project.artifactId}</this.distributionManagement.project>
+    <this.distributionManagement.system>github</this.distributionManagement.system>
+    <this.distributionManagement.repository>GitHub Packages</this.distributionManagement.repository>
     <this.distributionManagement.url>
-      https://api.bintray.com/maven/${dev.bintray.username}/${this.distributionManagement.repository}/${this.distributionManagement.project}/;publish=1
+      https://maven.pkg.github.com/${dev.github.username}/${project.artifactId}
     </this.distributionManagement.url>
 
     <this.docker.from-image>openjdk:${this.java.version}-jre-slim</this.docker.from-image>
@@ -127,6 +127,7 @@
 
     <!-- Plugins -->
     <maven-git-code-format.version>1.39</maven-git-code-format.version>
+    <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
     <jacoco-maven-plugin.version>0.8.5</jacoco-maven-plugin.version>
     <jib-maven-plugin.version>2.1.0</jib-maven-plugin.version>
     <sonar-maven-plugin.version>3.7.0.1746</sonar-maven-plugin.version>
@@ -166,6 +167,11 @@
               </configuration>
             </execution>
           </executions>
+        </plugin>
+
+        <plugin>
+          <artifactId>maven-gpg-plugin</artifactId>
+          <version>${maven-gpg-plugin.version}</version>
         </plugin>
 
         <!-- http://maven.apache.org/maven-ci-friendly.html -->
@@ -268,6 +274,14 @@
         </plugin>
 
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <configuration>
+            <tagNameFormat>v@{project.version}</tagNameFormat>
+          </configuration>
+        </plugin>
+
+        <plugin>
           <groupId>org.sonarsource.scanner.maven</groupId>
           <artifactId>sonar-maven-plugin</artifactId>
           <version>${sonar-maven-plugin.version}</version>
@@ -275,4 +289,56 @@
       </plugins>
     </pluginManagement>
   </build>
+
+  <profiles>
+    <profile>
+      <id>release</id>
+      <activation>
+        <property>
+          <name>performRelease</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-source-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>attach-sources</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+
+          <plugin>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>attach-javadocs</id>
+                <goals>
+                  <goal>jar</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+
+          <plugin>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
