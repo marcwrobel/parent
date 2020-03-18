@@ -89,8 +89,8 @@
 
     <this.scm.system>GitHub</this.scm.system>
     <this.scm.project>${project.artifactId}</this.scm.project>
-    <this.scm.url>https://github.com/${dev.scm.user}/${this.scm.project}</this.scm.url>
-    <this.scm.connection>git@github.com:${dev.scm.user}/${this.scm.project}</this.scm.connection>
+    <this.scm.url>https://github.com/${dev.github.username}/${this.scm.project}</this.scm.url>
+    <this.scm.connection>git@github.com:${dev.github.username}/${this.scm.project}</this.scm.connection>
     <this.scm.developerConnection>${this.scm.connection}</this.scm.developerConnection>
 
     <this.issueManagement.system>${this.scm.system}</this.issueManagement.system>
@@ -105,19 +105,19 @@
     <this.distributionManagement.repository>maven</this.distributionManagement.repository>
     <this.distributionManagement.project>${project.artifactId}</this.distributionManagement.project>
     <this.distributionManagement.url>
-      https://api.bintray.com/maven/${dev.distributionManagement.user}/${this.distributionManagement.repository}/${this.distributionManagement.project}/;publish=1
+      https://api.bintray.com/maven/${dev.bintray.username}/${this.distributionManagement.repository}/${this.distributionManagement.project}/;publish=1
     </this.distributionManagement.url>
 
-    <project.docker.base-image>openjdk:${this.java.version}-jre-slim</project.docker.base-image>
+    <this.docker.from-image>openjdk:${this.java.version}-jre-slim</this.docker.from-image>
+    <this.docker.to-image>${dev.dockerhub.username}/${project.name}</this.docker.to-image>
 
     <dev.name>Marc Wrobel</dev.name>
-    <dev.user>marcwrobel</dev.user>
+    <dev.username>marcwrobel</dev.username>
     <dev.email>marc.wrobel@gmail.com</dev.email>
     <dev.url>http://www.marcwrobel.fr/</dev.url>
-    <dev.scm.user>${dev.user}</dev.scm.user>
-    <dev.ciManagement.user>${dev.user}</dev.ciManagement.user>
-    <dev.distributionManagement.user>${dev.user}</dev.distributionManagement.user>
-    <dev.dockerRegistry.user>${dev.user}</dev.dockerRegistry.user>
+    <dev.github.username>${dev.username}</dev.github.username>
+    <dev.bintray.username>${dev.username}</dev.bintray.username>
+    <dev.dockerhub.username>${dev.username}</dev.dockerhub.username>
 
     <!-- Dependencies versions -->
     <spring-boot.version>${project.parent.version}</spring-boot.version>
@@ -199,10 +199,10 @@
           <version>${jib-maven-plugin.version}</version>
           <configuration>
             <from>
-              <image>${project.docker.base-image}</image>
+              <image>${this.docker.from-image}</image>
             </from>
             <to>
-              <image>${dev.dockerRegistry.user}/${project.name}</image>
+              <image>${this.docker.to-image}</image>
               <tags>
                 <tag>${project.version}</tag>
               </tags>

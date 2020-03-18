@@ -40,6 +40,11 @@ Just inherit from it in your project :
 
     <this.java.version>1.8</this.java.version>
     <this.maven.version>3.6.3</this.maven.version>
+
+    <dev.name>Marc Wrobel</dev.name>
+    <dev.username>marcwrobel</dev.username>
+    <dev.email>marc.wrobel@gmail.com</dev.email>
+    <dev.url>http://www.marcwrobel.fr/</dev.url>
     ...
   </properties>
 </project>
