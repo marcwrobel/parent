@@ -115,7 +115,7 @@
     <my.distributionManagement.user>${my.user}</my.distributionManagement.user>
 
     <!-- Plugins -->
-    <gmavenplus-plugin.version>1.7.1</gmavenplus-plugin.version>
+    <gmavenplus-plugin.version>1.8.1</gmavenplus-plugin.version>
     <maven-git-code-format.version>1.28</maven-git-code-format.version>
 
     <!-- Overrides -->
