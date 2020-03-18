@@ -58,20 +58,18 @@ Note that in order to use this POM you must use at least Java 8 and Maven 3.6.1.
 
 ## What's included?
 * default Maven configuration for `organization`, `developers`, `scm`, `issueManagement`,
-  `ciManagement`, `distributionManagement`.
-* a default goal (`clean install`)
-* dependency management for dozens of libraries (some [Apache Commons](https://commons.apache.org),
-  some [java extensions](https://www.jcp.org/), [Groovy](http://www.groovy-lang.org/),
+  `ciManagement`, `distributionManagement` and `defaultGoal`,
+* dependency management for dozens of libraries ([Apache Commons](https://commons.apache.org),
+  [java extensions](https://www.jcp.org/), [Groovy](http://www.groovy-lang.org/),
   [Spring](https://spring.io/), [Hibernate](https://hibernate.org/) to name a few),
-* plugin management for:
-  [kotlin-maven-plugin](https://kotlinlang.org/docs/reference/using-maven.html),
-  [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/),
-  [maven-enforcer-plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/),
-  [maven-failsafe-plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/),
-  [maven-git-code-format](https://github.com/Cosium/maven-git-code-format),
-  [git-commit-id-plugin](https://github.com/git-commit-id/maven-git-commit-id-plugin),
-  [gmavenplus-plugin](https://groovy.github.io/GMavenPlus/),
-  [spring-boot-maven-plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/index.html).
+- plugin management for [kotlin-maven-plugin](https://kotlinlang.org/docs/reference/using-maven.html),
+- plugin management for [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/),
+- plugin management for [maven-enforcer-plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/),
+- plugin management for [maven-failsafe-plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/),
+- plugin management for [maven-git-code-format](https://github.com/Cosium/maven-git-code-format),
+- plugin management for [git-commit-id-plugin](https://github.com/git-commit-id/maven-git-commit-id-plugin),
+- plugin management for [gmavenplus-plugin](https://groovy.github.io/GMavenPlus/),
+- plugin management for [spring-boot-maven-plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/index.html).
 
 Take a look at the [POM](pom.xml) for more details.
 
