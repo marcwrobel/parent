@@ -116,11 +116,14 @@
     <my.ciManagement.user>${my.user}</my.ciManagement.user>
     <my.distributionManagement.user>${my.user}</my.distributionManagement.user>
 
+    <!-- Dependencies versions -->
+    <spring-boot.version>${project.parent.version}</spring-boot.version>
+
     <!-- Plugins -->
     <gmavenplus-plugin.version>1.8.1</gmavenplus-plugin.version>
     <maven-git-code-format.version>1.39</maven-git-code-format.version>
 
-    <!-- Overrides -->
+    <!-- Default properties overrides -->
     <java.version>${this.java.version}</java.version><!-- from Spring Boot -->
   </properties>
 
