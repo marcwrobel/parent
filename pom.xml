@@ -116,7 +116,7 @@
 
     <!-- Plugins -->
     <gmavenplus-plugin.version>1.8.1</gmavenplus-plugin.version>
-    <maven-git-code-format.version>1.28</maven-git-code-format.version>
+    <maven-git-code-format.version>1.39</maven-git-code-format.version>
 
     <!-- Overrides -->
     <java.version>${this.java.version}</java.version><!-- from Spring Boot -->
