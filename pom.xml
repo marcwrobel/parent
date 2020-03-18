@@ -80,12 +80,12 @@
     <this.inceptionYear>2019</this.inceptionYear>
 
     <this.defaultGoal>install</this.defaultGoal>
+    <this.resource.delimiter>@</this.resource.delimiter>
 
     <this.java.version>1.8</this.java.version>
     <this.java.version.enforced>[${this.java.version},)</this.java.version.enforced>
     <this.maven.version>3.6.3</this.maven.version>
     <this.maven.version.enforced>[${this.maven.version},)</this.maven.version.enforced>
-
 
     <this.scm.system>GitHub</this.scm.system>
     <this.scm.project>${project.artifactId}</this.scm.project>
@@ -125,6 +125,7 @@
 
     <!-- Default properties overrides -->
     <java.version>${this.java.version}</java.version><!-- from Spring Boot -->
+    <resource.delimiter>${this.resource.delimiter}</resource.delimiter><!-- from Spring Boot -->
   </properties>
 
   <build>
