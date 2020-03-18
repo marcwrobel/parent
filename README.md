@@ -1,7 +1,6 @@
 [![Build](https://github.com/marcwrobel/parent/workflows/build/badge.svg)](https://github.com/marcwrobel/parent/actions)
 
-Writing and maintaining Maven projects
-[POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
+Writing and maintaining Maven projects [POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
 is boring. This parent POM is simplifying those tasks in the context of my open source projects by:
 * defining common project and developer
   [properties](https://books.sonatype.com/mvnref-book/reference/resource-filtering-sect-properties.html)
