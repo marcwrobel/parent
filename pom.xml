@@ -90,7 +90,8 @@
     <this.scm.system>GitHub</this.scm.system>
     <this.scm.project>${project.artifactId}</this.scm.project>
     <this.scm.url>https://github.com/${dev.github.username}/${this.scm.project}</this.scm.url>
-    <this.scm.connection>git@github.com:${dev.github.username}/${this.scm.project}
+    <this.scm.connection>
+      scm:git:git@github.com:${dev.github.username}/${this.scm.project}
     </this.scm.connection>
     <this.scm.developerConnection>${this.scm.connection}</this.scm.developerConnection>
 
