@@ -62,6 +62,8 @@ Note that in order to use this POM you must use at least Java 8 and Maven 3.6.1.
 * dependency management for dozens of libraries ([Apache Commons](https://commons.apache.org),
   [java extensions](https://www.jcp.org/), [Groovy](http://www.groovy-lang.org/),
   [Spring](https://spring.io/), [Hibernate](https://hibernate.org/) to name a few),
+- plugin management for [flatten-maven-plugin](https://www.mojohaus.org/flatten-maven-plugin/)
+  ([CI-friendly configuration](http://maven.apache.org/maven-ci-friendly.html)),
 - plugin management for [git-commit-id-plugin](https://github.com/git-commit-id/maven-git-commit-id-plugin)
   (provided by `spring-boot-starter-parent` but non-verbose),
 - plugin management for [gmavenplus-plugin](https://groovy.github.io/GMavenPlus/)

@@ -169,6 +169,32 @@
           </executions>
         </plugin>
 
+        <!-- http://maven.apache.org/maven-ci-friendly.html -->
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>flatten-maven-plugin</artifactId>
+          <configuration>
+            <updatePomFile>true</updatePomFile>
+            <flattenMode>resolveCiFriendliesOnly</flattenMode>
+          </configuration>
+          <executions>
+            <execution>
+              <id>flatten</id>
+              <phase>process-resources</phase>
+              <goals>
+                <goal>flatten</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>flatten.clean</id>
+              <phase>clean</phase>
+              <goals>
+                <goal>clean</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+
         <plugin>
           <groupId>pl.project13.maven</groupId>
           <artifactId>git-commit-id-plugin</artifactId>
