@@ -5,8 +5,9 @@ is boring. This parent POM is simplifying those tasks in the context of my open 
 * defining common project and developer
   [properties](https://books.sonatype.com/mvnref-book/reference/resource-filtering-sect-properties.html)
   that can be easily overridden in a single place;
-* defining a convenient set of configuration default (if you use GitHub, GitHub Actions and JFrog
-  Bintray).
+* defining a convenient set of configuration default (if you use [GitHub](https://github.com/),
+  [GitHub Actions](https://github.com/features/actions), [JFrog Bintray](https://bintray.com/),
+  [Docker Hub](https://hub.docker.com/)).
 * providing dependency and plugin management
 
 
