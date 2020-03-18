@@ -128,6 +128,42 @@
     <pluginManagement>
       <plugins>
         <plugin>
+          <artifactId>maven-source-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>attach-sources</id>
+              <goals>
+                <goal>jar-no-fork</goal>
+                <goal>test-jar-no-fork</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+
+        <plugin>
+          <artifactId>maven-enforcer-plugin</artifactId>
+          <executions>
+            <execution>
+              <id>enforce-maven</id>
+              <goals>
+                <goal>enforce</goal>
+              </goals>
+              <configuration>
+                <rules>
+                  <requireMavenVersion>
+                    <version>${this.maven.version.enforced}</version>
+                  </requireMavenVersion>
+                  <requireJavaVersion>
+                    <version>${this.java.version.enforced}</version>
+                  </requireJavaVersion>
+                  <banDuplicatePomDependencyVersions/>
+                </rules>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+
+        <plugin>
           <groupId>pl.project13.maven</groupId>
           <artifactId>git-commit-id-plugin</artifactId>
           <configuration>
@@ -155,43 +191,6 @@
                 <goal>removeStubs</goal>
                 <goal>removeTestStubs</goal>
               </goals>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-source-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>attach-sources</id>
-              <goals>
-                <goal>jar-no-fork</goal>
-                <goal>test-jar-no-fork</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
-
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-enforcer-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>enforce-maven</id>
-              <goals>
-                <goal>enforce</goal>
-              </goals>
-              <configuration>
-                <rules>
-                  <requireMavenVersion>
-                    <version>${this.maven.version.enforced}</version>
-                  </requireMavenVersion>
-                  <requireJavaVersion>
-                    <version>${this.java.version.enforced}</version>
-                  </requireJavaVersion>
-                  <banDuplicatePomDependencyVersions/>
-                </rules>
-              </configuration>
             </execution>
           </executions>
         </plugin>
