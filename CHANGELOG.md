@@ -15,6 +15,7 @@ minor versions are following those of [`spring-boot-starter-parent`](https://spr
   `developers`, `scm`, `issueManagement`, `ciManagement`, `distributionManagement`.
 - Plugin management for [flatten-maven-plugin](https://www.mojohaus.org/flatten-maven-plugin/).
 - Plugin management for [git-commit-id-plugin](https://github.com/git-commit-id/maven-git-commit-id-plugin).
+- Plugin management for [jacoco-maven-plugin](https://www.jacoco.org/jacoco/).
 - Plugin management for [jib-maven-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-maven-plugin).
 - Plugin management for [kotlin-maven-plugin](https://kotlinlang.org/docs/reference/using-maven.html).
 - Plugin management for [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/).

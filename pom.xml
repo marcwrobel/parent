@@ -124,6 +124,7 @@
 
     <!-- Plugins -->
     <maven-git-code-format.version>1.39</maven-git-code-format.version>
+    <jacoco-maven-plugin.version>0.8.5</jacoco-maven-plugin.version>
     <jib-maven-plugin.version>2.1.0</jib-maven-plugin.version>
 
     <!-- Default properties overrides -->
@@ -191,6 +192,36 @@
           <configuration>
             <verbose>false</verbose>
           </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>${jacoco-maven-plugin.version}</version>
+          <configuration>
+            <append>true</append>
+          </configuration>
+          <executions>
+            <execution>
+              <id>agent-for-ut</id>
+              <goals>
+                <goal>prepare-agent</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>agent-for-it</id>
+              <goals>
+                <goal>prepare-agent-integration</goal>
+              </goals>
+            </execution>
+            <execution>
+              <id>jacoco-site</id>
+              <phase>verify</phase>
+              <goals>
+                <goal>report</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
 
         <plugin>
