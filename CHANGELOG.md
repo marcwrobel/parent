@@ -22,5 +22,6 @@ minor versions are following those of [`spring-boot-starter-parent`](https://spr
 - Plugin management for [maven-enforcer-plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/).
 - Plugin management for [maven-failsafe-plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/).
 - Plugin management for [maven-git-code-format](https://github.com/Cosium/maven-git-code-format).
+- Plugin management for [sonar-maven-plugin](https://sonarsource.github.io/sonar-scanner-maven/).
 - Plugin management for [spring-boot-maven-plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/index.html).
 - GitHub Action configuration for testing this project.

@@ -1,4 +1,5 @@
 [![Build](https://github.com/marcwrobel/parent/workflows/build/badge.svg)](https://github.com/marcwrobel/parent/actions)
+[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=fr.marcwrobel:parent&metric=alert_status)](https://sonarcloud.io/dashboard?id=fr.marcwrobel:parent)
 
 Writing and maintaining Maven projects [POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
 is boring. This parent POM is simplifying those tasks in the context of my open source projects by:
@@ -86,6 +87,7 @@ Note that in order to use this POM you must use at least Java 8 and Maven 3.6.1.
   (provided by `spring-boot-starter-parent`),
 - plugin management for [maven-git-code-format](https://github.com/Cosium/maven-git-code-format)
   (hooks installation),
+- plugin management and project configuration for [sonar-maven-plugin](https://sonarsource.github.io/sonar-scanner-maven/),
 - plugin management for [spring-boot-maven-plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/index.html)
   (provided by `spring-boot-starter-parent`).
 

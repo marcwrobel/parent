@@ -16,4 +16,6 @@ jobs:
         with:
           java-version: ${{ matrix.java }}
       - name: Build
-        run: mvn -B verify
+        env:
+          SONAR_LOGIN: ${{ secrets.SONAR_LOGIN }}
+        run: mvn --settings .mvn/settings.xml -B verify sonar:sonar

@@ -90,7 +90,8 @@
     <this.scm.system>GitHub</this.scm.system>
     <this.scm.project>${project.artifactId}</this.scm.project>
     <this.scm.url>https://github.com/${dev.github.username}/${this.scm.project}</this.scm.url>
-    <this.scm.connection>git@github.com:${dev.github.username}/${this.scm.project}</this.scm.connection>
+    <this.scm.connection>git@github.com:${dev.github.username}/${this.scm.project}
+    </this.scm.connection>
     <this.scm.developerConnection>${this.scm.connection}</this.scm.developerConnection>
 
     <this.issueManagement.system>${this.scm.system}</this.issueManagement.system>
@@ -118,6 +119,7 @@
     <dev.github.username>${dev.username}</dev.github.username>
     <dev.bintray.username>${dev.username}</dev.bintray.username>
     <dev.dockerhub.username>${dev.username}</dev.dockerhub.username>
+    <dev.sonarcloud.username>${dev.username}</dev.sonarcloud.username>
 
     <!-- Dependencies versions -->
     <spring-boot.version>${project.parent.version}</spring-boot.version>
@@ -126,10 +128,15 @@
     <maven-git-code-format.version>1.39</maven-git-code-format.version>
     <jacoco-maven-plugin.version>0.8.5</jacoco-maven-plugin.version>
     <jib-maven-plugin.version>2.1.0</jib-maven-plugin.version>
+    <sonar-maven-plugin.version>3.7.0.1746</sonar-maven-plugin.version>
 
-    <!-- Default properties overrides -->
-    <java.version>${this.java.version}</java.version><!-- from Spring Boot -->
-    <resource.delimiter>${this.resource.delimiter}</resource.delimiter><!-- from Spring Boot -->
+    <!-- Spring Boot properties -->
+    <java.version>${this.java.version}</java.version>
+    <resource.delimiter>${this.resource.delimiter}</resource.delimiter>
+
+    <!-- Sonar properties. SonarCloud's credentials must be provided externally. -->
+    <sonar.organization>${dev.sonarcloud.username}</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
   </properties>
 
   <build>
@@ -257,6 +264,12 @@
               </goals>
             </execution>
           </executions>
+        </plugin>
+
+        <plugin>
+          <groupId>org.sonarsource.scanner.maven</groupId>
+          <artifactId>sonar-maven-plugin</artifactId>
+          <version>${sonar-maven-plugin.version}</version>
         </plugin>
       </plugins>
     </pluginManagement>
