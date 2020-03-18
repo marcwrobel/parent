@@ -16,5 +16,6 @@ jobs:
           java-version: 11
       - name: Build
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_LOGIN: ${{ secrets.SONAR_LOGIN }}
         run: mvn --settings .mvn/settings.xml -B verify sonar:sonar
