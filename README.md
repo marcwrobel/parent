@@ -62,14 +62,22 @@ Note that in order to use this POM you must use at least Java 8 and Maven 3.6.1.
 * dependency management for dozens of libraries ([Apache Commons](https://commons.apache.org),
   [java extensions](https://www.jcp.org/), [Groovy](http://www.groovy-lang.org/),
   [Spring](https://spring.io/), [Hibernate](https://hibernate.org/) to name a few),
-- plugin management for [kotlin-maven-plugin](https://kotlinlang.org/docs/reference/using-maven.html),
-- plugin management for [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/),
-- plugin management for [maven-enforcer-plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/),
-- plugin management for [maven-failsafe-plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/),
-- plugin management for [maven-git-code-format](https://github.com/Cosium/maven-git-code-format),
-- plugin management for [git-commit-id-plugin](https://github.com/git-commit-id/maven-git-commit-id-plugin),
-- plugin management for [gmavenplus-plugin](https://groovy.github.io/GMavenPlus/),
-- plugin management for [spring-boot-maven-plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/index.html).
+- plugin management for [git-commit-id-plugin](https://github.com/git-commit-id/maven-git-commit-id-plugin)
+  (provided by `spring-boot-starter-parent` but non-verbose),
+- plugin management for [gmavenplus-plugin](https://groovy.github.io/GMavenPlus/)
+  ([joint compilation configuration](https://github.com/groovy/GMavenPlus/wiki/Usage#configuring-gmavenplus-1)),
+- plugin management for [kotlin-maven-plugin](https://kotlinlang.org/docs/reference/using-maven.html)
+  (provided by `spring-boot-starter-parent`),
+- plugin management for [maven-compiler-plugin](https://maven.apache.org/plugins/maven-compiler-plugin/)
+  (provided by `spring-boot-starter-parent`),
+- plugin management for [maven-enforcer-plugin](https://maven.apache.org/enforcer/maven-enforcer-plugin/)
+  (activate and configure rules for Java and Maven versions),
+- plugin management for [maven-failsafe-plugin](http://maven.apache.org/surefire/maven-failsafe-plugin/)
+  (provided by `spring-boot-starter-parent`),
+- plugin management for [maven-git-code-format](https://github.com/Cosium/maven-git-code-format)
+  (hooks installation),
+- plugin management for [spring-boot-maven-plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/index.html)
+  (provided by `spring-boot-starter-parent`).
 
 Take a look at the [POM](pom.xml) for more details.
 
@@ -78,8 +86,7 @@ Take a look at the [POM](pom.xml) for more details.
 ## Why `spring-boot-starter-parent`?
 This POM is inheriting from [`spring-boot-starter-parent`](https://spring.io/projects/spring-boot)
 in order to:
-* take advantage of the Spring Boot team's work on dependencies compatibility (see
-  `spring-boot-dependencies`);
+* take advantage of the Spring Boot team's work on dependencies (with `spring-boot-dependencies`);
 * benefit from some good plugin management defaults.
 
 Because this POM is relying so much on `spring-boot-starter-parent` its major and minor versions are
