@@ -7,3 +7,4 @@ and patch version can be incremented even for breaking changes.
 
 ### Changed
 * Switch distribution management to Sonatype OSSRH.
+* Add `analyze` profile for analysis with SonarScanner and https://sonarcloud.io.

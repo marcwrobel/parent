@@ -92,11 +92,13 @@ Note that in order to use this POM you must use at least Java 8 and Maven 3.6.1.
 * plugin management and project configuration for [sonar-maven-plugin](https://sonarsource.github.io/sonar-scanner-maven/),
 * plugin management for [spring-boot-maven-plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/index.html)
   (provided by `spring-boot-starter-parent`).
-* a release profile, activated automatically during release with `maven-release-plugin` which
+* a `release` profile, activated automatically during release with `maven-release-plugin`, which
   triggers :
   * sources attachment with [maven-source-plugin](https://maven.apache.org/plugins/maven-source-plugin/),
   * javadoc attachment with [maven-javadoc-plugin](http://maven.apache.org/plugins/maven-javadoc-plugin/),
   * a PGP signature with [maven-gpg-plugin](https://maven.apache.org/plugins/maven-gpg-plugin/).
+* an `analyze` profile, that must be activated manually, which triggers the `jacoco` agent during
+  unit or integration tests in order to calculate code coverage for SonarQube.
 
 Take a look at the [POM](pom.xml) for more details.
 
