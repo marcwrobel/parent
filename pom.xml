@@ -99,10 +99,10 @@
     <this.ciManagement.project>${project.artifactId}</this.ciManagement.project>
     <this.ciManagement.url>${this.scm.url}/actions</this.ciManagement.url>
 
-    <this.distributionManagement.system>github</this.distributionManagement.system>
-    <this.distributionManagement.repository>GitHub Packages</this.distributionManagement.repository>
+    <this.distributionManagement.system>sonatype-nexus-staging</this.distributionManagement.system>
+    <this.distributionManagement.repository>Sonatype OSSRH</this.distributionManagement.repository>
     <this.distributionManagement.url>
-      https://maven.pkg.github.com/${dev.github.username}/${project.artifactId}
+      https://oss.sonatype.org/service/local/staging/deploy/maven2
     </this.distributionManagement.url>
 
     <this.docker.from-image>openjdk:${this.java.version}-jre-slim</this.docker.from-image>
@@ -113,7 +113,6 @@
     <dev.email>marc.wrobel@gmail.com</dev.email>
     <dev.url>http://www.marcwrobel.fr/</dev.url>
     <dev.github.username>${dev.username}</dev.github.username>
-    <dev.bintray.username>${dev.username}</dev.bintray.username>
     <dev.dockerhub.username>${dev.username}</dev.dockerhub.username>
     <dev.sonarcloud.username>${dev.username}</dev.sonarcloud.username>
 
