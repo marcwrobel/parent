@@ -4,3 +4,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 project does not adhere to [Semantic Versioning](https://semver.org/spec/v2.0.0.html) : major and
 minor versions are following those of [`spring-boot-starter-parent`](https://spring.io/projects/spring-boot)
 and patch version can be incremented even for breaking changes.
+
+### Changed
+* Upgrade to `spring-boot-starter-parent`
+  [2.2.6.RELEASE](https://github.com/spring-projects/spring-boot/releases/tag/v2.2.6.RELEASE) (#1).
