@@ -75,7 +75,7 @@
     <this.url>${this.scm.url}</this.url>
     <this.inceptionYear>2019</this.inceptionYear>
 
-    <this.defaultGoal>install</this.defaultGoal>
+    <this.defaultGoal>verify</this.defaultGoal>
     <this.resource.delimiter>@</this.resource.delimiter>
 
     <this.java.version>11</this.java.version>

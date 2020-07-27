@@ -10,3 +10,5 @@ and patch version can be incremented even for breaking changes.
 * Upgrade to `git-code-format-maven-plugin` [2.5](https://github.com/Cosium/git-code-format-maven-plugin/releases/tag/2.5) (#3).
   Following this upgrade the plugin has [new coordinates](https://github.com/Cosium/git-code-format-maven-plugin#breaking-changes-between-1x-and-2x)
   : `com.cosium.code:git-code-format-maven-plugin`.
+* Default goal is now `verify` instead of `install` (#4). This goal has more meaning as a default :
+  usually developers wants to verify the build, not install the artifact(s) in the local repository.
