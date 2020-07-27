@@ -120,7 +120,7 @@
     <spring-boot.version>${project.parent.version}</spring-boot.version>
 
     <!-- Plugins -->
-    <maven-git-code-format.version>1.39</maven-git-code-format.version>
+    <git-code-format-maven-plugin.version>2.5</git-code-format-maven-plugin.version>
     <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
     <jacoco-maven-plugin.version>0.8.5</jacoco-maven-plugin.version>
     <jib-maven-plugin.version>2.1.0</jib-maven-plugin.version>
@@ -231,8 +231,8 @@
         -->
         <plugin>
           <groupId>com.cosium.code</groupId>
-          <artifactId>maven-git-code-format</artifactId>
-          <version>${maven-git-code-format.version}</version>
+          <artifactId>git-code-format-maven-plugin</artifactId>
+          <version>${git-code-format-maven-plugin.version}</version>
           <executions>
             <execution>
               <id>install-formatter-hook</id>

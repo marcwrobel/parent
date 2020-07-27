@@ -6,5 +6,7 @@ minor versions are following those of [`spring-boot-starter-parent`](https://spr
 and patch version can be incremented even for breaking changes.
 
 ### Changed
-* Upgrade to `spring-boot-starter-parent`
-  [2.3.2.RELEASE](https://github.com/spring-projects/spring-boot/releases/tag/v2.3.2.RELEASE) (#1).
+* Upgrade to `spring-boot-starter-parent` [2.3.2.RELEASE](https://github.com/spring-projects/spring-boot/releases/tag/v2.3.2.RELEASE) (#2).
+* Upgrade to `git-code-format-maven-plugin` [2.5](https://github.com/Cosium/git-code-format-maven-plugin/releases/tag/2.5) (#3).
+  Following this upgrade the plugin has [new coordinates](https://github.com/Cosium/git-code-format-maven-plugin#breaking-changes-between-1x-and-2x)
+  : `com.cosium.code:git-code-format-maven-plugin`.
