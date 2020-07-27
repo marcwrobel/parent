@@ -7,4 +7,4 @@ and patch version can be incremented even for breaking changes.
 
 ### Changed
 * Upgrade to `spring-boot-starter-parent`
-  [2.2.6.RELEASE](https://github.com/spring-projects/spring-boot/releases/tag/v2.2.6.RELEASE) (#1).
+  [2.3.2.RELEASE](https://github.com/spring-projects/spring-boot/releases/tag/v2.3.2.RELEASE) (#1).
