@@ -1,5 +1,6 @@
 [![Build](https://github.com/marcwrobel/parent/workflows/build/badge.svg)](https://github.com/marcwrobel/parent/actions)
 [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=fr.marcwrobel:parent&metric=alert_status)](https://sonarcloud.io/dashboard?id=fr.marcwrobel:parent)
+[![Maven Central](https://img.shields.io/maven-central/v/fr.marcwrobel/parent.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22fr.marcwrobel%22%20AND%20a:%22parent%22)
 
 Writing and maintaining Maven projects [POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
 is boring. This parent POM is simplifying those tasks in the context of my open source projects by:
@@ -25,7 +26,7 @@ Just inherit from it in your project :
   <parent>
     <groupId>fr.marcwrobel</groupId>
     <artifactId>parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>a.b.c</version>
     <relativePath/>
   </parent>
 
