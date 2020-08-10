@@ -15,7 +15,7 @@
   <packaging>pom</packaging>
 
   <name>parent</name>
-  <description>${dev.name} parent POM</description>
+  <description>Marc Wrobel's projects parent POM</description>
   <url>${this.scm.url}</url>
   <inceptionYear>2019</inceptionYear>
 
