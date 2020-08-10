@@ -30,16 +30,17 @@ Just inherit from it in your project :
     <relativePath/>
   </parent>
 
-  <artifactId>myproject</artifactId>
+  <groupId>groupId</groupId>
+  <artifactId>artifactId</artifactId>
   <version>x.y.z-SNAPSHOT</version>
+
+  <name>name</name>
+  <description>description</description>
+  <url>https://url.com</url>
+  <inceptionYear>2020</inceptionYear>
 ...
   <!-- only override if needed -->
   <properties>
-    <this.name>${project.artifactId}</this.name>
-    <this.description>${my.name} parent POM.</this.description>
-    <this.url>${project.scm.url}</this.url>
-    <this.inceptionYear>2019</this.inceptionYear>
-
     <this.java.version>1.8</this.java.version>
     <this.maven.version>3.6.3</this.maven.version>
 

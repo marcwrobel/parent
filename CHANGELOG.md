@@ -10,6 +10,7 @@ and patch version can be incremented even for breaking changes.
 ### Changed
 
 ### Removed
+* Property `this.name`, `this.description`, `this.url` and `this.inceptionYear` has been removed.
 
 ### Fixed
-- Rename property this.distributionManagement.repository to this.distributionManagement.name
+- Rename property `this.distributionManagement.repository` to `this.distributionManagement.name`.
