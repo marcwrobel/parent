@@ -10,3 +10,6 @@ and patch version can be incremented even for breaking changes.
 ### Changed
 
 ### Removed
+
+### Fixed
+- Rename property this.distributionManagement.repository to this.distributionManagement.name

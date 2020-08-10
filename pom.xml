@@ -100,7 +100,7 @@
     <this.ciManagement.url>${this.scm.url}/actions</this.ciManagement.url>
 
     <this.distributionManagement.system>sonatype-nexus-staging</this.distributionManagement.system>
-    <this.distributionManagement.repository>Sonatype OSSRH</this.distributionManagement.repository>
+    <this.distributionManagement.name>Sonatype OSSRH</this.distributionManagement.name>
     <this.distributionManagement.url>
       https://oss.sonatype.org/service/local/staging/deploy/maven2
     </this.distributionManagement.url>
