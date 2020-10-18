@@ -9,7 +9,8 @@ and patch version can be incremented even for breaking changes.
 
 ### Changed
 
-- Upgrade to spring-boot-starter-parent [2.3.4.RELEASE](https://github.com/spring-projects/spring-boot/releases/tag/v2.3.4.RELEASE) (#6).
+- Upgrade to [spring-boot-starter-parent 2.3.4.RELEASE](https://github.com/spring-projects/spring-boot/releases/tag/v2.3.4.RELEASE) (#6).
+- Upgrade to [jacoco-maven-plugin 0.8.6](https://github.com/jacoco/jacoco/releases/tag/v0.8.6) (closes #7)
 
 ### Removed
 
