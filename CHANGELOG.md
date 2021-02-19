@@ -13,6 +13,7 @@ and patch version can be incremented even for breaking changes.
 
 - Upgrade to spring-boot-starter-parent [2.4.3](https://github.com/spring-projects/spring-boot/releases/tag/v2.4.3) (#9). See
   also [Spring Boot 2.4 Release Notes](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.4-Release-Notes).
+- Upgrade to Git Code Format Maven Plugin 2.7 (#10).
 
 ### Removed
 
