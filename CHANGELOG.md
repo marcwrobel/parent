@@ -13,8 +13,9 @@ and patch version can be incremented even for breaking changes.
 
 - Upgrade to spring-boot-starter-parent [2.4.3](https://github.com/spring-projects/spring-boot/releases/tag/v2.4.3) (#9). See
   also [Spring Boot 2.4 Release Notes](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.4-Release-Notes).
-- Upgrade to Git Code Format Maven Plugin 2.7 (#10).
-- Upgrade to jib-maven-plugin 2.7.1 (#11).
+- Upgrade to Git Code Format Maven Plugin [2.7](https://github.com/Cosium/git-code-format-maven-plugin) (#10).
+- Upgrade to jib-maven-plugin [2.7.1](https://github.com/GoogleContainerTools/jib/blob/master/jib-maven-plugin/CHANGELOG.md#271) (#11).
+- Upgrade to sonar-maven-plugin [3.8.0.2131](https://jira.sonarsource.com/secure/ReleaseNote.jspa?projectId=10977&version=16337) (#12)
 
 ### Removed
 
