@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+cd "$(dirname $(readlink -f "$0"))/.." || exit 1
+
+mvn versions:display-parent-updates
+mvn versions:display-property-updates
+mvn versions:display-plugin-updates
