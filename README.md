@@ -4,6 +4,7 @@
 
 Writing and maintaining Maven projects [POM](https://maven.apache.org/guides/introduction/introduction-to-the-pom.html)
 is boring. This parent POM is simplifying those tasks in the context of my open source projects by:
+
 * defining common project and developer
   [properties](https://books.sonatype.com/mvnref-book/reference/resource-filtering-sect-properties.html)
   that can be easily overridden in a single place;
@@ -12,15 +13,15 @@ is boring. This parent POM is simplifying those tasks in the context of my open 
   [Docker Hub](https://hub.docker.com)).
 * providing dependency and plugin management
 
-
-
 ## How to use it?
+
 Just inherit from it in your project :
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -38,7 +39,7 @@ Just inherit from it in your project :
   <description>description</description>
   <url>https://url.com</url>
   <inceptionYear>2020</inceptionYear>
-...
+  ...
   <!-- only override if needed -->
   <properties>
     <this.java.version>1.8</this.java.version>
@@ -57,15 +58,16 @@ All inherited information can be overridden, especially properties (take a look 
 this [parent POM](pom.xml) for an exhaustive list). Remember you can display the effective POM using
 [`maven-help-plugin`](https://maven.apache.org/plugins/maven-help-plugin/effective-pom-mojo.html) in
 your project:
+
 ```bash
 mvn help:effective-pom
 ```
 
-Note that in order to use this POM you must use at least Java 8 and Maven 3.6.1.
-
-
+Note that in order to use this POM you must use at least Java 8 and Maven 3.8.5. You must also declare
+a [`maven-versions-rules.xml`](/maven-versions-rules.xml) file at the root of your project.
 
 ## What's included?
+
 * default Maven configuration for `organization`, `developers`, `scm`, `issueManagement`,
   `ciManagement`, `distributionManagement` and `defaultGoal`,
 * dependency management for dozens of libraries ([Apache Commons](https://commons.apache.org),
@@ -91,8 +93,12 @@ Note that in order to use this POM you must use at least Java 8 and Maven 3.6.1.
   (change `tagNameFormat`).
 * plugin management for [maven-git-code-format](https://github.com/Cosium/maven-git-code-format)
   (hooks installation),
-* plugin management and project configuration for [sonar-maven-plugin](https://sonarsource.github.io/sonar-scanner-maven/),
-* plugin management for [spring-boot-maven-plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/index.html)
+* plugin management and project configuration
+  for [sonar-maven-plugin](https://sonarsource.github.io/sonar-scanner-maven/),
+* plugin management and project configuration
+  for [versions-maven-plugin](https://www.mojohaus.org/versions-maven-plugin/),
+* plugin management
+  for [spring-boot-maven-plugin](https://docs.spring.io/spring-boot/docs/current/maven-plugin/index.html)
   (provided by `spring-boot-starter-parent`).
 * a `release` profile, activated automatically during release with `maven-release-plugin`, which
   triggers :
@@ -104,11 +110,11 @@ Note that in order to use this POM you must use at least Java 8 and Maven 3.6.1.
 
 Take a look at the [POM](pom.xml) for more details.
 
-
-
 ## Why `spring-boot-starter-parent`?
+
 This POM is inheriting from [`spring-boot-starter-parent`](https://spring.io/projects/spring-boot)
 in order to:
+
 * take advantage of the Spring Boot team's work on dependencies (with `spring-boot-dependencies`);
 * benefit from some good plugin management defaults.
 

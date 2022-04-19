@@ -10,6 +10,7 @@ and patch version can be incremented even for breaking changes.
 - Add a utility script to simplify dependency upgrades (#20).
 - Set maven-release-plugin version (#22).
 - Set maven-site-plugin version (#23).
+- Configure versions-maven-plugin to ignore non-final dependencies (#24).
 
 ### Changed
 

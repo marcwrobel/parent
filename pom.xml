@@ -264,6 +264,15 @@
           <artifactId>sonar-maven-plugin</artifactId>
           <version>${sonar-maven-plugin.version}</version>
         </plugin>
+
+        <!-- https://stackoverflow.com/q/10230903 -->
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>versions-maven-plugin</artifactId>
+          <configuration>
+            <rulesUri>file:///${maven.multiModuleProjectDirectory}/maven-versions-rules.xml</rulesUri>
+          </configuration>
+        </plugin>
       </plugins>
     </pluginManagement>
   </build>
