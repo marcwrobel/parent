@@ -7,30 +7,8 @@ and patch version can be incremented even for breaking changes.
 
 ### Added
 
-- Add a utility script to simplify dependency upgrades (#20).
-- Set maven-release-plugin version (#22).
-- Set maven-site-plugin version (#23).
-- Configure versions-maven-plugin to ignore non-final dependencies (#24).
-
 ### Changed
-
-- Upgrade spring-boot-starter-parent to [2.6.6](https://github.com/spring-projects/spring-boot/releases/tag/v2.6.6)
-  (#19).
-- Upgrade sonar-maven-plugin
-  to [3.9.1.2184](https://jira.sonarsource.com/secure/ReleaseNote.jspa?projectId=10977&version=16990)
-  (#18).
-- Upgrade maven-gpg-plugin to [3.0.1](https://www.mail-archive.com/announce@maven.apache.org/msg01004.html) (#17).
-- Upgrade jib-maven-plugin to 3.2.1 (#16).
-- Change Jib base image to `eclipse-temurin` (#16). `eclipse-temurin` (JRE) is the default base image used by Jib since
-  3.2.0.
-- Upgrade jacoco-maven-plugin to [0.8.8](https://github.com/jacoco/jacoco/releases/tag/v0.8.8) (#15).
-- Upgrade flatten-maven-plugin to
-  [1.2.7](https://github.com/mojohaus/flatten-maven-plugin/compare/flatten-maven-plugin-1.2.5...flatten-maven-plugin-1.2.7)
-  (#13).
-- Upgrade minimal Maven version to 3.8.5 (#21).
 
 ### Removed
 
 ### Fixed
-
-- Do not use jib's `to/tags` to specify the to image tag (#25). `to/image` is now used instead.
