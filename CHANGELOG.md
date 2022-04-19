@@ -15,6 +15,7 @@ and patch version can be incremented even for breaking changes.
   (#19).
 - Upgrade sonar-maven-plugin to [3.9.1.2184](https://jira.sonarsource.com/secure/ReleaseNote.jspa?projectId=10977&version=16990)
   (#18).
+- Upgrade maven-gpg-plugin to [3.0.1](https://www.mail-archive.com/announce@maven.apache.org/msg01004.html) (#17).
 
 ### Removed
 
