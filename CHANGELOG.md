@@ -9,6 +9,9 @@ and patch version can be incremented even for breaking changes.
 
 ### Changed
 
+- Upgrade spring-boot-starter-parent to [2.6.6](https://github.com/spring-projects/spring-boot/releases/tag/v2.6.6)
+  (#19).
+
 ### Removed
 
 ### Fixed
