@@ -8,6 +8,7 @@ and patch version can be incremented even for breaking changes.
 ### Added
 
 - Add a utility script to simplify dependency upgrades (#20).
+- Set maven-release-plugin version (#22).
 
 ### Changed
 

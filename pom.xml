@@ -121,6 +121,7 @@
     <flatten-maven-plugin.version>1.2.7</flatten-maven-plugin.version>
     <git-code-format-maven-plugin.version>2.7</git-code-format-maven-plugin.version>
     <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
+    <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
     <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
     <jib-maven-plugin.version>3.2.1</jib-maven-plugin.version>
     <sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
@@ -166,6 +167,8 @@
           <artifactId>maven-gpg-plugin</artifactId>
           <version>${maven-gpg-plugin.version}</version>
         </plugin>
+
+
 
         <!-- http://maven.apache.org/maven-ci-friendly.html -->
         <plugin>
@@ -244,8 +247,8 @@
         </plugin>
 
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
+          <version>${maven-release-plugin.version}</version>
           <configuration>
             <tagNameFormat>v@{project.version}</tagNameFormat>
           </configuration>
