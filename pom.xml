@@ -118,7 +118,7 @@
     <spring-boot.version>${project.parent.version}</spring-boot.version>
 
     <!-- Plugins -->
-    <flatten-maven-plugin.version>1.2.5</flatten-maven-plugin.version>
+    <flatten-maven-plugin.version>1.2.7</flatten-maven-plugin.version>
     <git-code-format-maven-plugin.version>2.7</git-code-format-maven-plugin.version>
     <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
     <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>

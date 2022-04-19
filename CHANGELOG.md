@@ -21,6 +21,9 @@ and patch version can be incremented even for breaking changes.
 - Change Jib base image to `eclipse-temurin` (#16). `eclipse-temurin` (JRE) is the default base image used by Jib since
   3.2.0.
 - Upgrade jacoco-maven-plugin to [0.8.8](https://github.com/jacoco/jacoco/releases/tag/v0.8.8) (#15).
+- Upgrade flatten-maven-plugin to
+  [1.2.7](https://github.com/mojohaus/flatten-maven-plugin/compare/flatten-maven-plugin-1.2.5...flatten-maven-plugin-1.2.7)
+  (#13).
 
 ### Removed
 
