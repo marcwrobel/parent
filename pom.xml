@@ -103,7 +103,7 @@
       https://oss.sonatype.org/service/local/staging/deploy/maven2
     </this.distributionManagement.url>
 
-    <this.docker.from-image>openjdk:${this.java.version}-jre-slim</this.docker.from-image>
+    <this.docker.from-image>eclipse-temurin:${this.java.version}-jre</this.docker.from-image>
     <this.docker.to-image>${dev.dockerhub.username}/${project.name}</this.docker.to-image>
 
     <dev.name>Marc Wrobel</dev.name>
@@ -122,7 +122,7 @@
     <git-code-format-maven-plugin.version>2.7</git-code-format-maven-plugin.version>
     <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
     <jacoco-maven-plugin.version>0.8.6</jacoco-maven-plugin.version>
-    <jib-maven-plugin.version>2.7.1</jib-maven-plugin.version>
+    <jib-maven-plugin.version>3.2.1</jib-maven-plugin.version>
     <sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
 
     <!-- Spring Boot properties -->
