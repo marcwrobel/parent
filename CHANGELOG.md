@@ -20,6 +20,7 @@ and patch version can be incremented even for breaking changes.
 - Upgrade jib-maven-plugin to 3.2.1 (#16).
 - Change Jib base image to `eclipse-temurin` (#16). `eclipse-temurin` (JRE) is the default base image used by Jib since
   3.2.0.
+- Upgrade jacoco-maven-plugin to [0.8.8](https://github.com/jacoco/jacoco/releases/tag/v0.8.8) (#15).
 
 ### Removed
 
