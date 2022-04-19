@@ -24,6 +24,7 @@ and patch version can be incremented even for breaking changes.
 - Upgrade flatten-maven-plugin to
   [1.2.7](https://github.com/mojohaus/flatten-maven-plugin/compare/flatten-maven-plugin-1.2.5...flatten-maven-plugin-1.2.7)
   (#13).
+- Upgrade minimal Maven version to 3.8.5 (#21).
 
 ### Removed
 
