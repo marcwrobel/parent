@@ -123,7 +123,7 @@
     <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
     <jacoco-maven-plugin.version>0.8.6</jacoco-maven-plugin.version>
     <jib-maven-plugin.version>2.7.1</jib-maven-plugin.version>
-    <sonar-maven-plugin.version>3.8.0.2131</sonar-maven-plugin.version>
+    <sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
 
     <!-- Spring Boot properties -->
     <java.version>${this.java.version}</java.version>

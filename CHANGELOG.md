@@ -13,6 +13,8 @@ and patch version can be incremented even for breaking changes.
 
 - Upgrade spring-boot-starter-parent to [2.6.6](https://github.com/spring-projects/spring-boot/releases/tag/v2.6.6)
   (#19).
+- Upgrade sonar-maven-plugin to [3.9.1.2184](https://jira.sonarsource.com/secure/ReleaseNote.jspa?projectId=10977&version=16990)
+  (#18).
 
 ### Removed
 
