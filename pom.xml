@@ -220,10 +220,7 @@
               <image>${this.docker.from-image}</image>
             </from>
             <to>
-              <image>${this.docker.to-image}</image>
-              <tags>
-                <tag>${project.version}</tag>
-              </tags>
+              <image>${this.docker.to-image}:${project.version}</image>
             </to>
           </configuration>
         </plugin>

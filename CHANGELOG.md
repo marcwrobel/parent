@@ -32,3 +32,5 @@ and patch version can be incremented even for breaking changes.
 ### Removed
 
 ### Fixed
+
+- Do not use jib's `to/tags` to specify the to image tag (#25). `to/image` is now used instead.
