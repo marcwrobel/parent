@@ -10,12 +10,6 @@ can be incremented even for breaking changes.
 
 ### Changed
 
-- Upgrade to spring-boot-dependencies
-  [2.6.7](https://github.com/spring-projects/spring-boot/releases/tag/v2.6.7) (#26).
-- Upgrade git-code-format-maven-plugin to [3.3](https://github.com/Cosium/git-code-format-maven-plugin#breaking-changes-between-2x-and-3x)
-  (#27). This upgrade requires you now use Java 11+ in order to build you project, even if
-  the target (`this.java.version`) is Java 8.
-
 ### Removed
 
 ### Fixed
