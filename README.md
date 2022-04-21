@@ -43,7 +43,7 @@ Just inherit from it in your project :
   <!-- only override if needed -->
   <properties>
     <this.java.version>1.8</this.java.version>
-    <this.maven.version>3.6.3</this.maven.version>
+    <this.maven.version>3.8.5</this.maven.version>
 
     <dev.name>Marc Wrobel</dev.name>
     <dev.username>marcwrobel</dev.username>
@@ -63,8 +63,10 @@ your project:
 mvn help:effective-pom
 ```
 
-Note that in order to use this POM you must use at least Java 8 and Maven 3.8.5. You must also declare
-a [`maven-versions-rules.xml`](/maven-versions-rules.xml) file at the root of your project.
+Note that despite the code target (`this.java.version`) can be Java 8, you will have to
+use at least Java 11 to build it (because maven-git-code-format dropped Java 8 support
+since version 3.x). You must also declare a
+[`maven-versions-rules.xml`](/maven-versions-rules.xml) file at the root of your project.
 
 ## What's included?
 

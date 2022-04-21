@@ -116,7 +116,7 @@
 
     <!-- Plugins -->
     <flatten-maven-plugin.version>1.2.7</flatten-maven-plugin.version>
-    <git-code-format-maven-plugin.version>2.7</git-code-format-maven-plugin.version>
+    <git-code-format-maven-plugin.version>3.3</git-code-format-maven-plugin.version>
     <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
     <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
     <maven-site-plugin.version>3.11.0</maven-site-plugin.version>
