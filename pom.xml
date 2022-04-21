@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" child.project.url.inherit.append.path="false">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"
+         child.project.url.inherit.append.path="false">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.6.7</version>
-    <relativePath />
+    <relativePath/>
   </parent>
 
   <groupId>fr.marcwrobel</groupId>
@@ -44,7 +47,9 @@
     Using child.*.inherit.append.path avoid path addition to inherited URLs. Re-declare to override.
     See https://issues.apache.org/jira/browse/MNG-5951.
   -->
-  <scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
+  <scm child.scm.connection.inherit.append.path="false"
+       child.scm.developerConnection.inherit.append.path="false"
+       child.scm.url.inherit.append.path="false">
     <url>${this.scm.url}</url>
     <connection>${this.scm.connection}</connection>
     <developerConnection>${this.scm.developerConnection}</developerConnection>
@@ -80,7 +85,9 @@
 
     <this.scm.system>GitHub</this.scm.system>
     <this.scm.project>${project.artifactId}</this.scm.project>
-    <this.scm.url>https://github.com/${dev.github.username}/${this.scm.project}</this.scm.url>
+    <this.scm.url>
+      https://github.com/${dev.github.username}/${this.scm.project}
+    </this.scm.url>
     <this.scm.connection>
       scm:git:git@github.com:${dev.github.username}/${this.scm.project}
     </this.scm.connection>
@@ -94,13 +101,17 @@
     <this.ciManagement.project>${project.artifactId}</this.ciManagement.project>
     <this.ciManagement.url>${this.scm.url}/actions</this.ciManagement.url>
 
-    <this.distributionManagement.system>sonatype-nexus-staging</this.distributionManagement.system>
+    <this.distributionManagement.system>
+      sonatype-nexus-staging
+    </this.distributionManagement.system>
     <this.distributionManagement.name>Sonatype OSSRH</this.distributionManagement.name>
     <this.distributionManagement.url>
       https://oss.sonatype.org/service/local/staging/deploy/maven2
     </this.distributionManagement.url>
 
-    <this.docker.from-image>eclipse-temurin:${this.java.version}-jre</this.docker.from-image>
+    <this.docker.from-image>
+      eclipse-temurin:${this.java.version}-jre
+    </this.docker.from-image>
     <this.docker.to-image>${dev.dockerhub.username}/${project.name}</this.docker.to-image>
 
     <dev.name>Marc Wrobel</dev.name>
@@ -154,7 +165,7 @@
                   <requireJavaVersion>
                     <version>${this.java.version.enforced}</version>
                   </requireJavaVersion>
-                  <banDuplicatePomDependencyVersions />
+                  <banDuplicatePomDependencyVersions/>
                 </rules>
               </configuration>
             </execution>
@@ -264,7 +275,9 @@
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>versions-maven-plugin</artifactId>
           <configuration>
-            <rulesUri>file:///${maven.multiModuleProjectDirectory}/maven-versions-rules.xml</rulesUri>
+            <rulesUri>
+              file:///${maven.multiModuleProjectDirectory}/maven-versions-rules.xml
+            </rulesUri>
           </configuration>
         </plugin>
       </plugins>
