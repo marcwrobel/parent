@@ -13,6 +13,7 @@ can be incremented even for breaking changes.
 - Upgrade to spring-boot-dependencies
   [2.7.1](https://github.com/spring-projects/spring-boot/releases/tag/v2.7.1) (#28).
 - Upgrade git-code-format to [3.4](https://github.com/Cosium/git-code-format-maven-plugin) (#29).
+- Upgrade maven-site-plugin to [3.12.0](https://blogs.apache.org/maven/entry/apache-maven-site-plugin-version4) (#30).
 - Update minimal maven version to [3.8.6](https://maven.apache.org/docs/3.8.6/release-notes.html) (#31).
 
 ### Removed
