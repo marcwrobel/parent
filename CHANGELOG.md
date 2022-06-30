@@ -12,7 +12,7 @@ can be incremented even for breaking changes.
 
 - Upgrade to spring-boot-dependencies
   [2.7.1](https://github.com/spring-projects/spring-boot/releases/tag/v2.7.1) (#28).
-
+- Update minimal maven version to [3.8.6](https://maven.apache.org/docs/3.8.6/release-notes.html) (#31).
 
 ### Removed
 
