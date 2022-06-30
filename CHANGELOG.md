@@ -10,6 +10,10 @@ can be incremented even for breaking changes.
 
 ### Changed
 
+- Upgrade to spring-boot-dependencies
+  [2.7.1](https://github.com/spring-projects/spring-boot/releases/tag/v2.7.1) (#28).
+
+
 ### Removed
 
 ### Fixed
