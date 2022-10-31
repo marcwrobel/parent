@@ -140,3 +140,17 @@ This POM is inheriting from
 
 Because this POM is relying so much on `spring-boot-starter-parent` its major and minor
 versions are also following those of Spring Boot.
+
+## Contribute
+
+Take a look at the [contribution guide](CONTRIBUTING.md).
+
+## Need help ?
+
+Start a [discussion](https://github.com/marcwrobel/parent/discussions),
+raise an [issue](https://github.com/marcwrobel/parent/issues?sort=created&direction=desc&state=open)
+or contribute with [a pull-request](https://github.com/marcwrobel/parent/pulls) (please take a look at the
+[contribution guide](CONTRIBUTING.md) before).
+
+And for the things that must be kept private (**only** !), such as [security issues](/SECURITY.md), email me at
+[marc.wrobel@gmail.com](mailto:marc.wrobel@gmail.com).

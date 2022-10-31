@@ -40,3 +40,4 @@ can be incremented even for breaking changes.
 - Add a `.tool-versions` file (#42).
 - Schedule workflows runs every saturday (#42).
 - Add a contribution guide (#42).
+- Improve README (#42).
