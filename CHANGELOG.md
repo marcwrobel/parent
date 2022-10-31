@@ -38,3 +38,4 @@ can be incremented even for breaking changes.
 - Add a supported JVM versions badge (#42).
 - Add a SonarCloud vulnerabilities badge (#42).
 - Add a `.tool-versions` file (#42).
+- Schedule workflows runs every saturday (#42).
