@@ -12,6 +12,7 @@ can be incremented even for breaking changes.
 
 - Bump maven-site-plugin from 3.12.0 to 3.12.1 (#33).
 - Bump git-code-format-maven-plugin from 3.4 to 3.5 (#38).
+- Bump jib-maven-plugin from 3.2.1 to 3.3.1 (#39).
 
 ### Removed
 
