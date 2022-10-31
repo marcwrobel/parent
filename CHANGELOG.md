@@ -37,3 +37,4 @@ can be incremented even for breaking changes.
 - Add a security policy (#42).
 - Add a supported JVM versions badge (#42).
 - Add a SonarCloud vulnerabilities badge (#42).
+- Add a `.tool-versions` file (#42).
