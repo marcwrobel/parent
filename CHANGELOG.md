@@ -32,4 +32,5 @@ can be incremented even for breaking changes.
 - Improve build workflow cache (#41). Add a cache for Sonar and explicitly configure Maven cache.
 - Use `fetch_depth=0` instead of a custom command in build workflow to disable shallow clones (#41).
   As seen [on Sonarcloud documentation](https://docs.sonarqube.org/latest/analysis/github-integration/).
-- Add `CODEOWNERS` file (#42).
+- Add `CODEOWNERS` (#42).
+- Add a _Contributor Covenant Code of Conduct_ (#42).
