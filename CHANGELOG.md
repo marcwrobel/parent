@@ -12,6 +12,9 @@ can be incremented even for breaking changes.
 
 - Bump maven-site-plugin from 3.12.0 to 3.12.1 (#33).
 - Bump actions/checkout from 2 to 3 (#34).
+- Bump actions/setup-java from 1 to 3 (#35).
+- Switch to `temurin` for `build` workflow (#35).
+- Activate `maven` cache in `build` workflow (#35).
 - Bump spring-boot-starter-parent from 2.7.1 to 2.7.5 (#36).
 - Bump flatten-maven-plugin from 1.2.7 to 1.3.0 (#37).
 - Bump git-code-format-maven-plugin from 3.4 to 3.5 (#38).
