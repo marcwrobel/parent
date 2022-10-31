@@ -10,6 +10,8 @@ can be incremented even for breaking changes.
 
 ### Changed
 
+- Bump maven-site-plugin from 3.12.0 to 3.12.1 (#33).
+
 ### Removed
 
 ### Fixed
