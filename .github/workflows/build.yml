@@ -2,7 +2,10 @@
 
 name: build
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
 
 jobs:
   build:
@@ -15,7 +18,11 @@ jobs:
         with:
           java-version: 11
       - name: Build
+        run: mvn --settings .mvn/settings.xml -B verify
+      - name: Analyze
+        # This workflow is only of value to the marcwrobel/parent repository and would always fail in forks
+        if: github.repository == 'marcwrobel/parent'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_LOGIN: ${{ secrets.SONAR_LOGIN }}
-        run: mvn --settings .mvn/settings.xml -B verify sonar:sonar
+        run: mvn --settings .mvn/settings.xml -B sonar:sonar

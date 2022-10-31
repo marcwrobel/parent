@@ -13,3 +13,6 @@ can be incremented even for breaking changes.
 ### Removed
 
 ### Fixed
+
+- Prevent duplicate build workflow run on pull requests (#40).
+- Disable sonar analysis on pull requests from forks (#40).
