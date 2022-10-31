@@ -19,6 +19,10 @@ can be incremented even for breaking changes.
 - Bump flatten-maven-plugin from 1.2.7 to 1.3.0 (#37).
 - Bump git-code-format-maven-plugin from 3.4 to 3.5 (#38).
 - Bump jib-maven-plugin from 3.2.1 to 3.3.1 (#39).
+- Reformat and annotate build workflow file (#41).
+- Improve build workflow cache (#41). Add a cache for Sonar and explicitly configure Maven cache.
+- Use `fetch_depth=0` instead of a custom command in build workflow to disable shallow clones (#41).
+  As seen [on Sonarcloud documentation](https://docs.sonarqube.org/latest/analysis/github-integration/).
 
 ### Removed
 
