@@ -34,3 +34,4 @@ can be incremented even for breaking changes.
   As seen [on Sonarcloud documentation](https://docs.sonarqube.org/latest/analysis/github-integration/).
 - Add `CODEOWNERS` (#42).
 - Add a _Contributor Covenant Code of Conduct_ (#42).
+- Add a _security policy_ (#42).
