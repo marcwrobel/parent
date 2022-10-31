@@ -36,3 +36,4 @@ can be incremented even for breaking changes.
 - Add a Contributor Covenant Code of Conduct (#42).
 - Add a security policy (#42).
 - Add a supported JVM versions badge (#42).
+- Add a SonarCloud vulnerabilities badge (#42).
