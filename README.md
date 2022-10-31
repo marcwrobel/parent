@@ -1,4 +1,5 @@
 [![Build](https://github.com/marcwrobel/parent/workflows/build/badge.svg)](https://github.com/marcwrobel/parent/actions)
+[![Supported JVM Versions](https://img.shields.io/badge/JVM-8--17-brightgreen.svg?logo=openjdk)](https://github.com/marcwrobel/parent/)
 [![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=fr.marcwrobel:parent&metric=alert_status)](https://sonarcloud.io/dashboard?id=fr.marcwrobel:parent)
 [![Maven Central](https://img.shields.io/maven-central/v/fr.marcwrobel/parent.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22fr.marcwrobel%22%20AND%20a:%22parent%22)
 

@@ -33,5 +33,6 @@ can be incremented even for breaking changes.
 - Use `fetch_depth=0` instead of a custom command in build workflow to disable shallow clones (#41).
   As seen [on Sonarcloud documentation](https://docs.sonarqube.org/latest/analysis/github-integration/).
 - Add `CODEOWNERS` (#42).
-- Add a _Contributor Covenant Code of Conduct_ (#42).
-- Add a _security policy_ (#42).
+- Add a Contributor Covenant Code of Conduct (#42).
+- Add a security policy (#42).
+- Add a supported JVM versions badge (#42).
