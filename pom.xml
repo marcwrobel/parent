@@ -75,7 +75,7 @@
 
     <this.java.version>11</this.java.version>
     <this.java.version.enforced>[${this.java.version},)</this.java.version.enforced>
-    <this.maven.version>3.8.5</this.maven.version>
+    <this.maven.version>3.8.6</this.maven.version>
     <this.maven.version.enforced>[${this.maven.version},)</this.maven.version.enforced>
 
     <this.scm.system>GitHub</this.scm.system>
