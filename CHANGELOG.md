@@ -10,10 +10,6 @@ can be incremented even for breaking changes.
 
 ### Changed
 
-- Bump spring-boot-starter-parent from 2.7.5 to 2.7.6 (#45).
-- Bump minimal Maven version from 3.8.5 to 3.8.6 (#46).
-- Bump Java version from temurin-17.0.4+101 to temurin-17.0.5+8 (#47).
-
 ### Removed
 
 ### Fixed
