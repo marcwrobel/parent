@@ -10,8 +10,6 @@ can be incremented even for breaking changes.
 
 ### Changed
 
-- Bump git-code-format-maven-plugin from 3.5 to 4.2 (#51).
-
 ### Removed
 
 ### Fixed
