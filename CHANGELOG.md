@@ -10,6 +10,8 @@ can be incremented even for breaking changes.
 
 ### Changed
 
+- Bump spring-boot-starter-parent from 2.7.6 to 3.0.0 (#50).
+
 ### Removed
 
 ### Fixed
