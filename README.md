@@ -67,10 +67,8 @@ in your project:
 mvn help:effective-pom
 ```
 
-Note that despite the code target (`this.java.version`) can be Java 8, you will have to
-use at least Java 11 to build it (because maven-git-code-format dropped Java 8 support
-since version 3.x). You must also declare a
-[`maven-versions-rules.xml`](/maven-versions-rules.xml) file at the root of your project.
+You must also declare a [`maven-versions-rules.xml`](/maven-versions-rules.xml) file at the root of
+your project.
 
 ## What's included?
 
@@ -107,8 +105,8 @@ since version 3.x). You must also declare a
   [maven-release-plugin](https://maven.apache.org/maven-release/maven-release-plugin/)
   (change `tagNameFormat`).
 - plugin management for
-  [maven-git-code-format](https://github.com/Cosium/maven-git-code-format)
-  (hooks installation),
+  [spotless-maven-plugin](https://github.com/diffplug/spotless/blob/main/plugin-maven/README.md)
+  (binding to the verify phase),
 - plugin management and project configuration for
   [sonar-maven-plugin](https://sonarsource.github.io/sonar-scanner-maven/),
 - plugin management and project configuration for

@@ -122,13 +122,13 @@
 
     <!-- Plugins -->
     <flatten-maven-plugin.version>1.3.0</flatten-maven-plugin.version>
-    <git-code-format-maven-plugin.version>4.2</git-code-format-maven-plugin.version>
     <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
     <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
     <maven-site-plugin.version>3.12.1</maven-site-plugin.version>
     <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
     <jib-maven-plugin.version>3.3.1</jib-maven-plugin.version>
     <sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
+    <spotless-maven-plugin.version>2.33.0</spotless-maven-plugin.version>
 
     <!-- Spring Boot properties -->
     <java.version>${this.java.version}</java.version>
@@ -228,40 +228,6 @@
           </configuration>
         </plugin>
 
-        <!--
-          Use it with the appropriate plugin / configuration in your IDE.
-          See https://github.com/google/google-java-format for more information.
-        -->
-        <plugin>
-          <groupId>com.cosium.code</groupId>
-          <artifactId>git-code-format-maven-plugin</artifactId>
-          <version>${git-code-format-maven-plugin.version}</version>
-          <executions>
-            <!-- On commit, format the modified files -->
-            <execution>
-              <id>install-formatter-hook</id>
-              <goals>
-                <goal>install-hooks</goal>
-              </goals>
-            </execution>
-            <!-- On Maven verify phase, fail if any file (including unmodified) is badly formatted -->
-            <execution>
-              <id>validate-code-format</id>
-              <goals>
-                <goal>validate-code-format</goal>
-              </goals>
-            </execution>
-          </executions>
-          <dependencies>
-            <!-- Enable https://github.com/google/google-java-format -->
-            <dependency>
-              <groupId>com.cosium.code</groupId>
-              <artifactId>google-java-format</artifactId>
-              <version>${git-code-format-maven-plugin.version}</version>
-            </dependency>
-          </dependencies>
-        </plugin>
-
         <plugin>
           <artifactId>maven-release-plugin</artifactId>
           <version>${maven-release-plugin.version}</version>
@@ -279,6 +245,20 @@
           <groupId>org.sonarsource.scanner.maven</groupId>
           <artifactId>sonar-maven-plugin</artifactId>
           <version>${sonar-maven-plugin.version}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>com.diffplug.spotless</groupId>
+          <artifactId>spotless-maven-plugin</artifactId>
+          <version>${spotless-maven-plugin.version}</version>
+          <executions>
+            <!-- spotless:check is bound to verify maven phase by default -->
+            <execution>
+              <goals>
+                <goal>check</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
 
         <!-- https://stackoverflow.com/q/10230903 -->
