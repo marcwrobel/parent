@@ -10,6 +10,7 @@ can be incremented even for breaking changes.
 
 ### Changed
 
+- Bump minimum required maven version from 2.8.6 to 2.8.7 (#62).
 - Bump spring-boot-starter-parent from 3.0.0 to 3.0.3 (#57, #59, #60).
 
 ### Removed
