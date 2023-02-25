@@ -17,3 +17,5 @@ can be incremented even for breaking changes.
 ### Fixed
 
 ## Internal
+
+- Bump maven from 3.8.6 to 3.9.0 in `.tool-versions` (#61).
