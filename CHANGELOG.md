@@ -8,18 +8,10 @@ can be incremented even for breaking changes.
 
 ### Added
 
-- Manage [cyclonedx-maven-plugin](https://github.com/CycloneDX/cyclonedx-maven-plugin) (#58).
-
 ### Changed
-
-- Replace git-code-format-maven-plugin by spotless-maven-plugin (#54).
-- Bump minimum required maven version from 2.8.6 to 2.8.7 (#62).
-- Bump spring-boot-starter-parent from 3.0.0 to 3.0.3 (#57, #59, #60).
 
 ### Removed
 
 ### Fixed
 
 ## Internal
-
-- Bump maven from 3.8.6 to 3.9.0 in `.tool-versions` (#61).
