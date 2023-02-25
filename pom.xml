@@ -121,6 +121,7 @@
     <spring-boot.version>${project.parent.version}</spring-boot.version>
 
     <!-- Plugins -->
+    <cyclonedx-maven-plugin.version>2.7.5</cyclonedx-maven-plugin.version>
     <flatten-maven-plugin.version>1.3.0</flatten-maven-plugin.version>
     <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
     <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
@@ -172,6 +173,23 @@
           <version>${maven-gpg-plugin.version}</version>
         </plugin>
 
+        <plugin>
+          <groupId>org.cyclonedx</groupId>
+          <artifactId>cyclonedx-maven-plugin</artifactId>
+          <version>${cyclonedx-maven-plugin.version}</version>
+          <executions>
+            <execution>
+              <id>make-bom</id>
+              <phase>package</phase>
+              <goals>
+                <goal>makeAggregateBom</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <outputName>${project.artifactId}-${project.version}-bom</outputName>
+          </configuration>
+        </plugin>
 
         <!-- http://maven.apache.org/maven-ci-friendly.html -->
         <plugin>

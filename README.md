@@ -79,6 +79,9 @@ your project.
   [Groovy](http://www.groovy-lang.org/), [Spring](https://spring.io/),
   [Hibernate](https://hibernate.org/) to name a few),
 - plugin management for
+  [cyclonedx-maven-plugin](https://github.com/CycloneDX/cyclonedx-maven-plugin)
+  (the configuration should work in most situations),
+- plugin management for
   [flatten-maven-plugin](https://www.mojohaus.org/flatten-maven-plugin/)
   ([CI-friendly configuration](http://maven.apache.org/maven-ci-friendly.html)),
 - plugin management for

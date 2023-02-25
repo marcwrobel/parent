@@ -8,6 +8,8 @@ can be incremented even for breaking changes.
 
 ### Added
 
+- Manage [cyclonedx-maven-plugin](https://github.com/CycloneDX/cyclonedx-maven-plugin) (#58).
+
 ### Changed
 
 - Replace git-code-format-maven-plugin by spotless-maven-plugin (#54).
