@@ -129,7 +129,7 @@
     <jacoco-maven-plugin.version>0.8.8</jacoco-maven-plugin.version>
     <jib-maven-plugin.version>3.3.1</jib-maven-plugin.version>
     <sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
-    <spotless-maven-plugin.version>2.34.0</spotless-maven-plugin.version>
+    <spotless-maven-plugin.version>2.35.0</spotless-maven-plugin.version>
 
     <!-- Spring Boot properties -->
     <java.version>${this.java.version}</java.version>
