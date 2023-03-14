@@ -11,6 +11,7 @@ can be incremented even for breaking changes.
 ### Changed
 
 - Bump spotless-maven-plugin from 2.33.0 to 2.35.0 (#67, #69).
+- Bump spring-boot-starter-parent from 3.0.3 to 3.0.4 (#68).
 
 ### Removed
 
