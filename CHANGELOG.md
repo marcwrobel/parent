@@ -10,7 +10,7 @@ can be incremented even for breaking changes.
 
 ### Changed
 
-- Bump spotless-maven-plugin from 2.33.0 to 2.35.0 (#67, #69).
+- Bump spotless-maven-plugin from 2.33.0 to 2.36.0 (#67, #69, #76).
 - Bump spring-boot-starter-parent from 3.0.3 to 3.0.5 (#68, #72).
 - Bump flatten-maven-plugin from 1.3.0 to 1.4.1 (#70, #73).
 - Bump maven-release-plugin from 2.5.3 to 3.0.0 (#71).
