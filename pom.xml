@@ -121,7 +121,7 @@
     <spring-boot.version>${project.parent.version}</spring-boot.version>
 
     <!-- Plugins -->
-    <cyclonedx-maven-plugin.version>2.7.6</cyclonedx-maven-plugin.version>
+    <cyclonedx-maven-plugin.version>2.7.7</cyclonedx-maven-plugin.version>
     <flatten-maven-plugin.version>1.4.1</flatten-maven-plugin.version>
     <maven-gpg-plugin.version>3.0.1</maven-gpg-plugin.version>
     <maven-release-plugin.version>3.0.0</maven-release-plugin.version>
