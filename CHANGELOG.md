@@ -16,6 +16,7 @@ can be incremented even for breaking changes.
 - Bump maven-release-plugin from 2.5.3 to 3.0.0 (#71).
 - Bump jacoco-maven-plugin from 0.8.8 to 0.8.10 (#75, #79).
 - Bump cyclonedx-maven-plugin from 2.7.5 to 2.7.8 (#74, #77, #80).
+- Bump maven-gpg-plugin from 3.0.1 to 3.1.0 (#81).
 
 ### Removed
 
