@@ -11,7 +11,7 @@
 
   <groupId>fr.marcwrobel</groupId>
   <artifactId>parent</artifactId>
-  <version>3.0.2</version>
+  <version>3.0.3-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>parent</name>
@@ -48,7 +48,7 @@
     <url>${this.scm.url}</url>
     <connection>${this.scm.connection}</connection>
     <developerConnection>${this.scm.developerConnection}</developerConnection>
-    <tag>v3.0.2</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <issueManagement>
