@@ -84,18 +84,18 @@ Details are available on the [OSSRH publish guide](https://central.sonatype.org/
 
 And finally:
 
-1. re-enable the disabled [branch protection rules](https://github.com/marcwrobel/parent/settings/branches),
-2. declare the release on GitHub :
+1. declare the release [on GitHub](https://github.com/marcwrobel/parent/tags) :
    1. copy the [changelog content](/CHANGELOG.md) in the release notes,
    2. check _Set as the latest release_ if appropriate,
    3. and check _Create a discussion for this release_  to automatically create the [release
       discussion](https://github.com/marcwrobel/parent/discussions)),
-3. empty the [changelog](/CHANGELOG.md) for the next release,
-4. update parent version in [README.md](/README.md),
-5. update the [security policy](/SECURITY.md) if necessary,
-6. lock and unpin the [discussion](https://github.com/marcwrobel/parent/discussions) that relates to the previous
+2. empty the [changelog](/CHANGELOG.md) for the next release,
+3. update parent version in [README.md](/README.md),
+4. update the [security policy](/SECURITY.md) if necessary,
+5. lock and unpin the [discussion](https://github.com/marcwrobel/parent/discussions) that relates to the previous
    version,
-7. pin the [discussion](https://github.com/marcwrobel/parent/discussions) that relates to the current version.
+6. pin the [discussion](https://github.com/marcwrobel/parent/discussions) that relates to the current version.
+7. re-enable the disabled [branch protection rules](https://github.com/marcwrobel/parent/settings/branches).
 
 ## Continuous Integration
 
