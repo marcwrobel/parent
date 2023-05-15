@@ -10,6 +10,8 @@ can be incremented even for breaking changes.
 
 ### Changed
 
+- Bump jib-maven-plugin from 3.3.1 to 3.3.2 (#85).
+
 ### Removed
 
 ### Fixed
