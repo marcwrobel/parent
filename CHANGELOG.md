@@ -10,6 +10,7 @@ can be incremented even for breaking changes.
 
 ### Changed
 
+- Activate `maven-enforcer-plugin` by default (#90).
 - Bump jib-maven-plugin from 3.3.1 to 3.3.2 (#85).
 - Bump cyclonedx-maven-plugin from 2.7.8 to 2.7.9 (#86).
 - Bump spring-boot-starter-parent from 3.0.6 to 3.1.0 (#87, #88).

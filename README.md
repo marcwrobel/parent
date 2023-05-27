@@ -128,7 +128,9 @@ your project.
 - an `analyze` profile, that must be activated manually, which triggers the `jacoco` agent
   during unit or integration tests in order to calculate code coverage for SonarQube.
 
-Take a look at the [POM](pom.xml) for more details.
+The `maven-enforcer-plugin` is the only plugin activated by default.
+
+Take a look at the [POM](/pom.xml) for more information.
 
 ## Why `spring-boot-starter-parent`?
 
