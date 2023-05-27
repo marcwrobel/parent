@@ -21,3 +21,6 @@ can be incremented even for breaking changes.
 ### Fixed
 
 ## Internal
+
+- Bump java from 17.0.5 to 17.0.7 (#92).
+- Bump maven from 3.9.0 to 3.9.2 (#92).
