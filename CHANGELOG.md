@@ -11,6 +11,7 @@ can be incremented even for breaking changes.
 ### Changed
 
 - Bump spotless-maven-plugin from 2.37.0 to 2.38.0 (#96).
+- Bump maven-release-plugin from 3.0.0 to 3.0.1 (#94).
 
 ### Removed
 
