@@ -10,6 +10,8 @@ can be incremented even for breaking changes.
 
 ### Changed
 
+- Bump spotless-maven-plugin from 2.37.0 to 2.38.0 (#96).
+
 ### Removed
 
 ### Fixed
