@@ -14,9 +14,13 @@ can be incremented even for breaking changes.
 - Bump maven-release-plugin from 3.0.0 to 3.0.1 (#94).
 - Bump actions/checkout from 3 to 4 (#100).
 - Bump java from 17.0.7+7 to 17.0.8+101 (#100).
+- Bump sonar-maven-plugin from 3.9.1.2184 to 3.10.0.2594 (#101).
 
 ### Removed
 
 ### Fixed
 
 ## Internal
+
+- Use Java 17 in GitHub Actions (#101). It is now required by the sonar-maven-plugin, see
+  https://docs.sonarcloud.io/appendices/scanner-environment/.
