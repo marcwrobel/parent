@@ -15,6 +15,7 @@ can be incremented even for breaking changes.
 - Bump actions/checkout from 3 to 4 (#100).
 - Bump java from 17.0.7+7 to 17.0.8+101 (#100).
 - Bump sonar-maven-plugin from 3.9.1.2184 to 3.10.0.2594 (#101).
+- Bump jib-maven-plugin from 3.3.2 to 3.4.0 (#103).
 
 ### Removed
 
