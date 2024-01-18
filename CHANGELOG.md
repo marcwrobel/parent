@@ -12,11 +12,12 @@ can be incremented even for breaking changes.
 
 - Bump spotless-maven-plugin from 2.37.0 to 2.40.0 (#96, #99, #104).
 - Bump maven-release-plugin from 3.0.0 to 3.0.1 (#94).
-- Bump actions/checkout from 3 to 4 (#100).
-- Bump java from 17.0.7+7 to 17.0.8+101 (#100).
 - Bump sonar-maven-plugin from 3.9.1.2184 to 3.10.0.2594 (#101).
 - Bump jib-maven-plugin from 3.3.2 to 3.4.0 (#103).
 - Bump org.jacoco:jacoco-maven-plugin from 0.8.10 to 0.8.11 (#105).
+- Bump actions/checkout from 3 to 4 (#100).
+- Bump actions/cache from 3 to 4 (#116).
+- Bump java from 17.0.7+7 to 17.0.8+101 (#100).
 
 ### Removed
 
