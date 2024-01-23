@@ -10,7 +10,7 @@ can be incremented even for breaking changes.
 
 ### Changed
 
-- Bump spotless-maven-plugin from 2.37.0 to 2.40.0 (#96, #99, #104).
+- Bump spotless-maven-plugin from 2.37.0 to 2.43.0 (#96, #99, #104, #118).
 - Bump maven-release-plugin from 3.0.0 to 3.0.1 (#94).
 - Bump sonar-maven-plugin from 3.9.1.2184 to 3.10.0.2594 (#101).
 - Bump jib-maven-plugin from 3.3.2 to 3.4.0 (#103).
