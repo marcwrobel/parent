@@ -15,7 +15,7 @@ can be incremented even for breaking changes.
 - Bump sonar-maven-plugin from 3.9.1.2184 to 3.10.0.2594 (#101).
 - Bump jib-maven-plugin from 3.3.2 to 3.4.1 (#103, #120).
 - Bump jacoco-maven-plugin from 0.8.10 to 0.8.11 (#105).
-- Bump maven-gpg-plugin from 3.1.0 to 3.2.0 (#121).
+- Bump maven-gpg-plugin from 3.1.0 to 3.2.1 (#121, ##123).
 - Bump sonar-maven-plugin from 3.10.0.2594 to 3.11.0.3922 (#122).
 - Bump actions/checkout from 3 to 4 (#100).
 - Bump actions/cache from 3 to 4 (#116).
