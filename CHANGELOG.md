@@ -19,7 +19,8 @@ can be incremented even for breaking changes.
 - Bump sonar-maven-plugin from 3.10.0.2594 to 3.11.0.3922 (#122).
 - Bump actions/checkout from 3 to 4 (#100).
 - Bump actions/cache from 3 to 4 (#116).
-- Bump java from 17.0.7+7 to 17.0.8+101 (#100).
+- Bump java from 17.0.7+7 to 17.0.10+7 (#100, #128).
+- Bump maven from 3.9.2 to 3.9.6 (#128).
 
 ### Removed
 
