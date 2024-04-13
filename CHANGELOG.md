@@ -10,27 +10,8 @@ can be incremented even for breaking changes.
 
 ### Changed
 
-- Bump org.springframework.boot:spring-boot-starter-parent from 3.1.0 to 3.2.4 (#129)
-- Bump spotless-maven-plugin from 2.37.0 to 2.43.0 (#96, #99, #104, #118).
-- Bump maven-release-plugin from 3.0.0 to 3.0.1 (#94).
-- Bump sonar-maven-plugin from 3.9.1.2184 to 3.10.0.2594 (#101).
-- Bump jib-maven-plugin from 3.3.2 to 3.4.1 (#103, #120).
-- Bump jacoco-maven-plugin from 0.8.10 to 0.8.12 (#105, #126).
-- Bump maven-gpg-plugin from 3.1.0 to 3.2.3 (#121, #123, #127).
-- Bump sonar-maven-plugin from 3.10.0.2594 to 3.11.0.3922 (#122).
-- Bump org.codehaus.mojo:flatten-maven-plugin from 1.5.0 to 1.6.0 (#113).
-- Bump org.cyclonedx:cyclonedx-maven-plugin from 2.7.9 to 2.8.0 (#124).
-
 ### Removed
 
 ### Fixed
 
 ## Internal
-
-- Use Java 17 in GitHub Actions (#101). It is now required by the sonar-maven-plugin, see
-  https://docs.sonarcloud.io/appendices/scanner-environment/.
-- Bump java from 17.0.7+7 to 17.0.10+7 (#100, #128).
-- Bump maven from 3.9.2 to 3.9.6 (#128).
-- Bump actions/checkout from 3 to 4 (#100).
-- Bump actions/cache from 3 to 4 (#116).
-- Bump actions/setup-java from 3 to 4 (#110).

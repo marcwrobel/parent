@@ -31,7 +31,7 @@ Just inherit from it in your project :
 	<parent>
 		<groupId>fr.marcwrobel</groupId>
 		<artifactId>parent</artifactId>
-		<version>3.1.0</version>
+		<version>3.2.0</version>
 		<relativePath/>
 	</parent>
 
