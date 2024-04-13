@@ -15,3 +15,5 @@ can be incremented even for breaking changes.
 ### Fixed
 
 ## Internal
+
+- Fix _Maven Central_ link in `README.md`.
