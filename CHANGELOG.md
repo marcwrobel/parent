@@ -18,6 +18,7 @@ can be incremented even for breaking changes.
 - Bump maven-gpg-plugin from 3.1.0 to 3.2.1 (#121, ##123).
 - Bump sonar-maven-plugin from 3.10.0.2594 to 3.11.0.3922 (#122).
 - Bump org.codehaus.mojo:flatten-maven-plugin from 1.5.0 to 1.6.0 (#113).
+- Bump org.cyclonedx:cyclonedx-maven-plugin from 2.7.9 to 2.8.0 (#124).
 
 ### Removed
 
