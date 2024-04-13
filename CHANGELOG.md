@@ -17,11 +17,7 @@ can be incremented even for breaking changes.
 - Bump jacoco-maven-plugin from 0.8.10 to 0.8.11 (#105).
 - Bump maven-gpg-plugin from 3.1.0 to 3.2.1 (#121, ##123).
 - Bump sonar-maven-plugin from 3.10.0.2594 to 3.11.0.3922 (#122).
-- Bump actions/checkout from 3 to 4 (#100).
-- Bump actions/cache from 3 to 4 (#116).
-- Bump actions/setup-java from 3 to 4 (#110).
-- Bump java from 17.0.7+7 to 17.0.10+7 (#100, #128).
-- Bump maven from 3.9.2 to 3.9.6 (#128).
+- Bump org.codehaus.mojo:flatten-maven-plugin from 1.5.0 to 1.6.0 (#113).
 
 ### Removed
 
@@ -31,3 +27,8 @@ can be incremented even for breaking changes.
 
 - Use Java 17 in GitHub Actions (#101). It is now required by the sonar-maven-plugin, see
   https://docs.sonarcloud.io/appendices/scanner-environment/.
+- Bump java from 17.0.7+7 to 17.0.10+7 (#100, #128).
+- Bump maven from 3.9.2 to 3.9.6 (#128).
+- Bump actions/checkout from 3 to 4 (#100).
+- Bump actions/cache from 3 to 4 (#116).
+- Bump actions/setup-java from 3 to 4 (#110).
