@@ -10,6 +10,7 @@ can be incremented even for breaking changes.
 
 ### Changed
 
+- Bump org.springframework.boot:spring-boot-starter-parent from 3.1.0 to 3.2.4 (#129)
 - Bump spotless-maven-plugin from 2.37.0 to 2.43.0 (#96, #99, #104, #118).
 - Bump maven-release-plugin from 3.0.0 to 3.0.1 (#94).
 - Bump sonar-maven-plugin from 3.9.1.2184 to 3.10.0.2594 (#101).
