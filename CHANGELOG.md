@@ -11,6 +11,7 @@ can be incremented even for breaking changes.
 ### Changed
 
 - Bump org.apache.maven.plugins:maven-gpg-plugin from 3.2.3 to 3.2.4 (#134).
+- Bump com.google.cloud.tools:jib-maven-plugin from 3.4.1 to 3.4.2 (#133).
 
 ### Removed
 
