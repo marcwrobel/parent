@@ -12,6 +12,7 @@ can be incremented even for breaking changes.
 
 - Bump org.apache.maven.plugins:maven-gpg-plugin from 3.2.3 to 3.2.4 (#134).
 - Bump com.google.cloud.tools:jib-maven-plugin from 3.4.1 to 3.4.2 (#133).
+- Bump org.springframework.boot:spring-boot-starter-parent from 3.2.4 to 3.2.5 (#135).
 
 ### Removed
 
