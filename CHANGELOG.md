@@ -10,6 +10,8 @@ can be incremented even for breaking changes.
 
 ### Changed
 
+- Bump org.apache.maven.plugins:maven-gpg-plugin from 3.2.3 to 3.2.4 (#134).
+
 ### Removed
 
 ### Fixed
