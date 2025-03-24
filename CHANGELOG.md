@@ -16,6 +16,7 @@ can be incremented even for breaking changes.
 - Bump org.sonarsource.scanner.maven:sonar-maven-plugin from 3.11.0.3922 to 4.0.0.4121 (#137).
 - Bump org.apache.maven.plugins:maven-release-plugin from 3.0.1 to 3.1.1 (#141).
 - Bump org.cyclonedx:cyclonedx-maven-plugin from 2.8.0 to 2.8.1 (#143).
+- Bump org.apache.maven.plugins:maven-site-plugin from 3.12.1 to 3.21.0 (#151).
 
 ### Removed
 
