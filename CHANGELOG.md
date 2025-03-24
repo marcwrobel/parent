@@ -25,3 +25,5 @@ can be incremented even for breaking changes.
 ## Internal
 
 - Fix _Maven Central_ link in `README.md`.
+- Bump Java version from 17.0.10 to 17.0.14 (#157).
+- Bump Maven version from 3.9.6 to 3.9.9 (#157).
