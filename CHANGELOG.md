@@ -10,7 +10,7 @@ can be incremented even for breaking changes.
 
 ### Changed
 
-- Bump org.springframework.boot:spring-boot-starter-parent from 3.2.4 to 3.3.2 (#135, #142).
+- Bump org.springframework.boot:spring-boot-starter-parent from 3.2.4 to 3.4.4 (#135, #142, #158).
 - Bump org.apache.maven.plugins:maven-gpg-plugin from 3.2.3 to 3.2.7 (#134, #148).
 - Bump com.google.cloud.tools:jib-maven-plugin from 3.4.1 to 3.4.5 (#133, #138, #159).
 - Bump org.sonarsource.scanner.maven:sonar-maven-plugin from 3.11.0.3922 to 4.0.0.4121 (#137).
