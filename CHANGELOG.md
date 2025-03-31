@@ -18,6 +18,7 @@ can be incremented even for breaking changes.
 - Bump org.cyclonedx:cyclonedx-maven-plugin from 2.8.0 to 2.9.1 (#143, #155).
 - Bump org.apache.maven.plugins:maven-site-plugin from 3.12.1 to 3.21.0 (#151).
 - Bump com.diffplug.spotless:spotless-maven-plugin from 2.43.0 to 2.44.3 (#160).
+- Bump org.codehaus.mojo:flatten-maven-plugin from 1.6.0 to 1.7.0 (#161).
 
 ### Removed
 
