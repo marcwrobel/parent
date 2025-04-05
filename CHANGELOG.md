@@ -20,6 +20,7 @@ can be incremented even for breaking changes.
 - Bump com.diffplug.spotless:spotless-maven-plugin from 2.43.0 to 2.44.3 (#160).
 - Bump org.codehaus.mojo:flatten-maven-plugin from 1.6.0 to 1.7.0 (#161).
 - Bump org.jacoco:jacoco-maven-plugin from 0.8.12 to 0.8.13 (#163).
+- Bump minimum required maven version from 3.8.7 to 3.9.9 (#62).
 
 ### Removed
 
