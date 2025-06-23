@@ -127,7 +127,7 @@
     <maven-release-plugin.version>3.1.1</maven-release-plugin.version>
     <maven-site-plugin.version>3.21.0</maven-site-plugin.version>
     <jacoco-maven-plugin.version>0.8.13</jacoco-maven-plugin.version>
-    <jib-maven-plugin.version>3.4.5</jib-maven-plugin.version>
+    <jib-maven-plugin.version>3.4.6</jib-maven-plugin.version>
     <sonar-maven-plugin.version>5.1.0.4751</sonar-maven-plugin.version>
     <spotless-maven-plugin.version>2.44.3</spotless-maven-plugin.version>
 
